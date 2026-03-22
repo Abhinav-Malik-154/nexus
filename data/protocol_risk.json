@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Binance CEX",
+    "tvl": 149295304200.1472,
+    "change_1d": -1.607153119473736,
+    "change_7d": -2.183219023567787,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340506"
+  },
+  {
+    "name": "Aave V3",
+    "tvl": 24621672273.80462,
+    "change_1d": -2.1718540807910216,
+    "change_7d": -1.4044568414826983,
+    "category": "Lending",
+    "risk_score": 10,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340530"
+  },
+  {
+    "name": "Lido",
+    "tvl": 19081328516.838924,
+    "change_1d": -3.3397614038662766,
+    "change_7d": -0.8616414021030465,
+    "category": "Liquid Staking",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340539"
+  },
+  {
+    "name": "Bitfinex",
+    "tvl": 16908096513.230429,
+    "change_1d": -2.0093857543587887,
+    "change_7d": -0.38746144500208857,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340547"
+  },
+  {
+    "name": "Bybit",
+    "tvl": 15319826579.74651,
+    "change_1d": -1.736848847217317,
+    "change_7d": -3.1212002825253222,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340557"
+  },
+  {
+    "name": "SSV Network",
+    "tvl": 14460879206.689941,
+    "change_1d": -3.406056558871427,
+    "change_7d": 1.947162745899945,
+    "category": "Staking Pool",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340566"
+  },
+  {
+    "name": "OKX",
+    "tvl": 13137534594.09597,
+    "change_1d": -27.509922256567137,
+    "change_7d": -27.217756778918698,
+    "category": "CEX",
+    "risk_score": 70,
+    "risk_level": "HIGH RISK",
+    "timestamp": "2026-03-22T22:51:25.340574"
+  },
+  {
+    "name": "Robinhood",
+    "tvl": 12478806801.664965,
+    "change_1d": -2.7545589151381336,
+    "change_7d": -3.1972345981503736,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340588"
+  },
+  {
+    "name": "EigenCloud",
+    "tvl": 9076691099.14336,
+    "change_1d": -3.032033255535822,
+    "change_7d": -1.026809664369523,
+    "category": "Restaking",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340596"
+  },
+  {
+    "name": "WBTC",
+    "tvl": 8033822126.476659,
+    "change_1d": -2.531334203783814,
+    "change_7d": -3.8463611991848268,
+    "category": "Bridge",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340606"
+  },
+  {
+    "name": "Binance staked ETH",
+    "tvl": 7663106104.039022,
+    "change_1d": -3.329097221376742,
+    "change_7d": -0.5415614639303925,
+    "category": "Liquid Staking",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340613"
+  },
+  {
+    "name": "Sky Lending",
+    "tvl": 7213571385.356381,
+    "change_1d": -2.8450848682359293,
+    "change_7d": -2.0313540852547334,
+    "category": "CDP",
+    "risk_score": 10,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340622"
+  },
+  {
+    "name": "Morpho V1",
+    "tvl": 6493221595.400742,
+    "change_1d": -5.806503578650606,
+    "change_7d": -5.629410624727953,
+    "category": "Lending",
+    "risk_score": 30,
+    "risk_level": "LOW-MEDIUM",
+    "timestamp": "2026-03-22T22:51:25.340633"
+  },
+  {
+    "name": "Ethena USDe",
+    "tvl": 5922101036.462199,
+    "change_1d": -0.015356338139099535,
+    "change_7d": 0.022824034973623952,
+    "category": "Basis Trading",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340642"
+  },
+  {
+    "name": "ether.fi Stake",
+    "tvl": 5449316150.985728,
+    "change_1d": -3.32080567891299,
+    "change_7d": -2.3453644059587617,
+    "category": "Liquid Restaking",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340652"
+  },
+  {
+    "name": "Bitget",
+    "tvl": 5334887431.812408,
+    "change_1d": -2.051498974755134,
+    "change_7d": -4.925339148284721,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340660"
+  },
+  {
+    "name": "HTX",
+    "tvl": 5253028103.548796,
+    "change_1d": 0.9218038032828133,
+    "change_7d": -3.5294976792733763,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340669"
+  },
+  {
+    "name": "Gemini",
+    "tvl": 5056737712.472543,
+    "change_1d": -2.703146755810266,
+    "change_7d": -4.695818817739834,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340677"
+  },
+  {
+    "name": "Coinbase Bridge",
+    "tvl": 5047990268.576167,
+    "change_1d": -2.5316317944942455,
+    "change_7d": -3.761225083833807,
+    "category": "Bridge",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340685"
+  },
+  {
+    "name": "Gate",
+    "tvl": 4756214287.951609,
+    "change_1d": -1.8371156396771227,
+    "change_7d": -3.349214602731138,
+    "category": "CEX",
+    "risk_score": 0,
+    "risk_level": "LOW RISK",
+    "timestamp": "2026-03-22T22:51:25.340692"
+  }
+]

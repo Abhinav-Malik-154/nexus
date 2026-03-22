@@ -1,0 +1,119 @@
+{
+  "predictions": [
+    {
+      "protocol": "OKX",
+      "gnn_risk_score": 58.7,
+      "level": "\ud83d\udfe1 WARNING"
+    },
+    {
+      "protocol": "Lido",
+      "gnn_risk_score": 58.7,
+      "level": "\ud83d\udfe1 WARNING"
+    },
+    {
+      "protocol": "Morpho V1",
+      "gnn_risk_score": 57.3,
+      "level": "\ud83d\udfe1 WARNING"
+    },
+    {
+      "protocol": "Sky Lending",
+      "gnn_risk_score": 0.2,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Aave V3",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Binance CEX",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Bitfinex",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Bybit",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "SSV Network",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Robinhood",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "EigenCloud",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "WBTC",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Binance staked ETH",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Ethena USDe",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "ether.fi Stake",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Bitget",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "HTX",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Gemini",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Coinbase Bridge",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    },
+    {
+      "protocol": "Gate",
+      "gnn_risk_score": 0.0,
+      "level": "\ud83d\udfe2 SAFE"
+    }
+  ],
+  "model_info": {
+    "type": "Graph Neural Network",
+    "layers": 2,
+    "hidden_dim": 32,
+    "features": [
+      "tvl_log_normalized",
+      "change_24h",
+      "change_7d",
+      "category_risk",
+      "contagion_risk"
+    ],
+    "final_loss": 0.098,
+    "epochs": 200
+  },
+  "timestamp": "2026-03-22T23:05:37.748805"
+}
