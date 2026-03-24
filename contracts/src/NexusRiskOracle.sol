@@ -1,230 +1,271 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title NexusRiskOracle
- * @notice Stores AI-generated risk scores on-chain
- * @dev Updated by Nexus backend every 15 minutes
- * 
- * This is the bridge between off-chain AI
- * and on-chain protection contracts.
- * 
- * Flow:
- * Python GNN generates risk scores
- * → Backend calls updateRiskScore()
- * → ProtectionVault reads scores
- * → Auto-protection triggers if threshold hit
+ * @author Nexus Protocol
+ * @notice Gas-optimized oracle for AI-generated DeFi risk scores
+ * @dev
+ *   ┌─────────────────────────────────────────────────────────────────┐
+ *   │  ARCHITECTURE                                                   │
+ *   │  ───────────────────────────────────────────────────────────── │
+ *   │  GNN Model → Backend → batchUpdateRiskScores() → On-chain      │
+ *   │                           ↓                                     │
+ *   │                    ProtectionVault.checkUpkeep()                │
+ *   └─────────────────────────────────────────────────────────────────┘
+ *
+ *   GAS OPTIMIZATIONS:
+ *   - bytes32 protocol IDs vs strings (~2-5k gas/op)
+ *   - Packed RiskData struct (single 256-bit slot)
+ *   - Custom errors vs require strings (~200 gas)
+ *   - Unchecked increments (~60 gas/iteration)
+ *   - Cached storage reads in loops
  */
 contract NexusRiskOracle is Ownable {
+    /*//////////////////////////////////////////////////////////////
+                                CONSTANTS
+    //////////////////////////////////////////////////////////////*/
 
-    // Risk score for each protocol
-    // Score: 0-100 (100 = maximum danger)
-    mapping(string => uint256) public riskScores;
-    
-    // When each score was last updated
-    mapping(string => uint256) public lastUpdated;
-    
-    // All tracked protocols
-    string[] public protocols;
-    mapping(string => bool) public isTracked;
-    
-    // Alert threshold — default 70/100
-    uint256 public alertThreshold = 70;
-    
-    // Authorized updaters (our backend)
+    /// @dev Max score (0-100, integer for gas efficiency)
+    uint64 internal constant _MAX_SCORE = 100;
+
+    /// @dev Staleness threshold (1 hour)
+    uint64 internal constant _STALENESS = 1 hours;
+
+    /*//////////////////////////////////////////////////////////////
+                                 ERRORS
+    //////////////////////////////////////////////////////////////*/
+
+    error Unauthorized();
+    error InvalidScore();
+    error InvalidThreshold();
+    error ArrayLengthMismatch();
+    error EmptyArray();
+
+    /*//////////////////////////////////////////////////////////////
+                                 EVENTS
+    //////////////////////////////////////////////////////////////*/
+
+    event RiskScoreUpdated(
+        bytes32 indexed protocolId,
+        uint64 oldScore,
+        uint64 newScore,
+        uint64 timestamp
+    );
+    event HighRiskAlert(bytes32 indexed protocolId, uint64 score, uint64 timestamp);
+    event ThresholdUpdated(uint64 oldThreshold, uint64 newThreshold);
+    event UpdaterAdded(address indexed updater);
+    event UpdaterRemoved(address indexed updater);
+
+    /*//////////////////////////////////////////////////////////////
+                                 TYPES
+    //////////////////////////////////////////////////////////////*/
+
+    /// @dev Packed into single 256-bit slot: score(64) + lastUpdated(64) + flags(8) = 136 bits
+    struct RiskData {
+        uint64 score;       // 0-100
+        uint64 lastUpdated; // Unix timestamp
+        uint8 flags;        // Bit 0: isTracked
+    }
+
+    /*//////////////////////////////////////////////////////////////
+                                 STATE
+    //////////////////////////////////////////////////////////////*/
+
+    mapping(bytes32 => RiskData) internal _data;
+    mapping(bytes32 => string) public protocolNames;
+    bytes32[] public protocolIds;
+    uint64 public alertThreshold = 70;
     mapping(address => bool) public authorizedUpdaters;
 
-    // Events
-    event RiskScoreUpdated(
-        string indexed protocol,
-        uint256 oldScore,
-        uint256 newScore,
-        uint256 timestamp
-    );
-    
-    event HighRiskAlert(
-        string indexed protocol,
-        uint256 riskScore,
-        uint256 timestamp
-    );
-    
-    event ThresholdUpdated(
-        uint256 oldThreshold,
-        uint256 newThreshold
-    );
+    /*//////////////////////////////////////////////////////////////
+                              CONSTRUCTOR
+    //////////////////////////////////////////////////////////////*/
 
     constructor() Ownable(msg.sender) {
         authorizedUpdaters[msg.sender] = true;
+        emit UpdaterAdded(msg.sender);
     }
 
+    /*//////////////////////////////////////////////////////////////
+                               MODIFIERS
+    //////////////////////////////////////////////////////////////*/
+
     modifier onlyAuthorized() {
-        require(
-            authorizedUpdaters[msg.sender] || 
-            msg.sender == owner(),
-            "Not authorized to update scores"
-        );
+        if (!authorizedUpdaters[msg.sender] && msg.sender != owner()) revert Unauthorized();
         _;
     }
 
-    /**
-     * @notice Update risk score for a protocol
-     * @param protocol Protocol name (e.g. "Aave V3")
-     * @param score Risk score 0-100
-     */
-    function updateRiskScore(
-        string calldata protocol,
-        uint256 score
-    ) external onlyAuthorized {
-        require(score <= 100, "Score must be 0-100");
-        
-        uint256 oldScore = riskScores[protocol];
-        riskScores[protocol] = score;
-        lastUpdated[protocol] = block.timestamp;
-        
-        // Add to tracked list if new
-        if (!isTracked[protocol]) {
-            protocols.push(protocol);
-            isTracked[protocol] = true;
-        }
-        
-        emit RiskScoreUpdated(
-            protocol,
-            oldScore,
-            score,
-            block.timestamp
-        );
-        
-        // Emit alert if high risk
-        if (score >= alertThreshold) {
-            emit HighRiskAlert(
-                protocol,
-                score,
-                block.timestamp
-            );
-        }
+    /*//////////////////////////////////////////////////////////////
+                            WRITE FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    /// @notice Update single protocol risk score
+    function updateRiskScore(bytes32 id, uint64 score) external onlyAuthorized {
+        _update(id, score);
     }
 
-    /**
-     * @notice Batch update multiple protocols at once
-     * @dev Saves gas vs individual updates
-     */
+    /// @notice Update by name (auto-hashes and stores name)
+    function updateRiskScoreByName(string calldata name, uint64 score) external onlyAuthorized {
+        bytes32 id = keccak256(bytes(name));
+        if (bytes(protocolNames[id]).length == 0) protocolNames[id] = name;
+        _update(id, score);
+    }
+
+    /// @notice Batch update - saves ~21k gas base + ~2k per protocol
     function batchUpdateRiskScores(
-        string[] calldata _protocols,
-        uint256[] calldata scores
+        bytes32[] calldata ids,
+        uint64[] calldata scores
     ) external onlyAuthorized {
-        require(
-            _protocols.length == scores.length,
-            "Arrays must be same length"
-        );
-        
-        for (uint256 i = 0; i < _protocols.length; i++) {
-            require(scores[i] <= 100, "Score must be 0-100");
-            
-            uint256 oldScore = riskScores[_protocols[i]];
-            riskScores[_protocols[i]] = scores[i];
-            lastUpdated[_protocols[i]] = block.timestamp;
-            
-            if (!isTracked[_protocols[i]]) {
-                protocols.push(_protocols[i]);
-                isTracked[_protocols[i]] = true;
-            }
-            
-            emit RiskScoreUpdated(
-                _protocols[i],
-                oldScore,
-                scores[i],
-                block.timestamp
-            );
-            
-            if (scores[i] >= alertThreshold) {
-                emit HighRiskAlert(
-                    _protocols[i],
-                    scores[i],
-                    block.timestamp
-                );
-            }
+        uint256 len = ids.length;
+        if (len == 0) revert EmptyArray();
+        if (len != scores.length) revert ArrayLengthMismatch();
+
+        for (uint256 i; i < len;) {
+            _update(ids[i], scores[i]);
+            unchecked { ++i; }
         }
     }
 
-    /**
-     * @notice Get risk score for a protocol
-     * @return score Current risk score 0-100
-     * @return updated When score was last updated
-     * @return isStale True if not updated in 1 hour
-     */
-    function getRiskScore(string calldata protocol)
-        external
-        view
-        returns (
-            uint256 score,
-            uint256 updated,
-            bool isStale
-        )
-    {
-        score = riskScores[protocol];
-        updated = lastUpdated[protocol];
-        isStale = block.timestamp - updated > 1 hours;
+    /// @notice Batch update by names
+    function batchUpdateRiskScoresByName(
+        string[] calldata names,
+        uint64[] calldata scores
+    ) external onlyAuthorized {
+        uint256 len = names.length;
+        if (len == 0) revert EmptyArray();
+        if (len != scores.length) revert ArrayLengthMismatch();
+
+        for (uint256 i; i < len;) {
+            bytes32 id = keccak256(bytes(names[i]));
+            if (bytes(protocolNames[id]).length == 0) protocolNames[id] = names[i];
+            _update(id, scores[i]);
+            unchecked { ++i; }
+        }
     }
 
-    /**
-     * @notice Check if any protocol is above threshold
-     * @return true if any protocol is high risk
-     */
-    function isAnyProtocolHighRisk()
-        external
-        view
-        returns (bool)
-    {
-        for (uint256 i = 0; i < protocols.length; i++) {
-            if (riskScores[protocols[i]] >= alertThreshold) {
-                return true;
-            }
+    /*//////////////////////////////////////////////////////////////
+                            VIEW FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    /// @notice Get risk score with staleness check
+    function getRiskScore(bytes32 id) external view returns (uint64, uint64, bool) {
+        RiskData storage d = _data[id];
+        return (d.score, d.lastUpdated, block.timestamp > d.lastUpdated + _STALENESS);
+    }
+
+    /// @notice Get risk score by protocol name
+    function getRiskScoreByName(string calldata name) external view returns (uint64, uint64, bool) {
+        RiskData storage d = _data[keccak256(bytes(name))];
+        return (d.score, d.lastUpdated, block.timestamp > d.lastUpdated + _STALENESS);
+    }
+
+    /// @notice Check if any protocol exceeds alert threshold
+    function isAnyProtocolHighRisk() external view returns (bool) {
+        uint256 len = protocolIds.length;
+        uint64 t = alertThreshold;
+        for (uint256 i; i < len;) {
+            if (_data[protocolIds[i]].score >= t) return true;
+            unchecked { ++i; }
         }
         return false;
     }
 
-    /**
-     * @notice Get all protocols above threshold
-     */
-    function getHighRiskProtocols()
-        external
-        view
-        returns (string[] memory highRisk)
-    {
-        uint256 count = 0;
-        for (uint256 i = 0; i < protocols.length; i++) {
-            if (riskScores[protocols[i]] >= alertThreshold) {
-                count++;
+    /// @notice Get all protocols above alert threshold
+    function getHighRiskProtocols() external view returns (bytes32[] memory result) {
+        uint256 len = protocolIds.length;
+        uint64 t = alertThreshold;
+
+        // Count first
+        uint256 count;
+        for (uint256 i; i < len;) {
+            if (_data[protocolIds[i]].score >= t) {
+                unchecked { ++count; }
             }
+            unchecked { ++i; }
         }
-        
-        highRisk = new string[](count);
-        uint256 idx = 0;
-        for (uint256 i = 0; i < protocols.length; i++) {
-            if (riskScores[protocols[i]] >= alertThreshold) {
-                highRisk[idx] = protocols[i];
-                idx++;
+
+        // Populate
+        result = new bytes32[](count);
+        uint256 idx;
+        for (uint256 i; i < len;) {
+            bytes32 id = protocolIds[i];
+            if (_data[id].score >= t) {
+                result[idx] = id;
+                unchecked { ++idx; }
             }
+            unchecked { ++i; }
         }
     }
 
-    function addAuthorizedUpdater(address updater) 
-        external onlyOwner {
+    /// @notice Total tracked protocols
+    function getProtocolCount() external view returns (uint256) {
+        return protocolIds.length;
+    }
+
+    /// @notice Check if protocol is tracked
+    function isTracked(bytes32 id) external view returns (bool) {
+        return _data[id].flags & 1 == 1;
+    }
+
+    /// @notice Convert name to bytes32 ID
+    function toProtocolId(string memory name) public pure returns (bytes32) {
+        return keccak256(bytes(name));
+    }
+
+    /// @notice Get staleness period
+    function STALENESS_PERIOD() external pure returns (uint64) {
+        return _STALENESS;
+    }
+
+    /// @notice Get max score
+    function MAX_SCORE() external pure returns (uint64) {
+        return _MAX_SCORE;
+    }
+
+    /*//////////////////////////////////////////////////////////////
+                            ADMIN FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    function addAuthorizedUpdater(address updater) external onlyOwner {
         authorizedUpdaters[updater] = true;
+        emit UpdaterAdded(updater);
     }
 
-    function setAlertThreshold(uint256 threshold)
-        external onlyOwner {
-        require(threshold <= 100, "Invalid threshold");
-        uint256 old = alertThreshold;
+    function removeAuthorizedUpdater(address updater) external onlyOwner {
+        authorizedUpdaters[updater] = false;
+        emit UpdaterRemoved(updater);
+    }
+
+    function setAlertThreshold(uint64 threshold) external onlyOwner {
+        if (threshold > _MAX_SCORE) revert InvalidThreshold();
+        emit ThresholdUpdated(alertThreshold, threshold);
         alertThreshold = threshold;
-        emit ThresholdUpdated(old, threshold);
     }
 
-    function getProtocolCount() 
-        external view returns (uint256) {
-        return protocols.length;
+    /*//////////////////////////////////////////////////////////////
+                           INTERNAL FUNCTIONS
+    //////////////////////////////////////////////////////////////*/
+
+    function _update(bytes32 id, uint64 score) private {
+        if (score > _MAX_SCORE) revert InvalidScore();
+
+        RiskData storage d = _data[id];
+        uint64 old = d.score;
+        uint64 ts = uint64(block.timestamp);
+
+        d.score = score;
+        d.lastUpdated = ts;
+
+        // Track new protocol
+        if (d.flags & 1 == 0) {
+            d.flags = 1;
+            protocolIds.push(id);
+        }
+
+        emit RiskScoreUpdated(id, old, score, ts);
+        if (score >= alertThreshold) emit HighRiskAlert(id, score, ts);
     }
 }
