@@ -7,8 +7,9 @@ import { ChainSelector } from './ChainSelector'
 
 const NAV_LINKS = [
   { href: '/', label: 'DASHBOARD' },
+  { href: '/intelligence', label: 'INTELLIGENCE' },
   { href: '/risk-map', label: 'RISK MAP' },
-  { href: '/protection', label: 'MY PROTECTION' },
+  { href: '/protection', label: 'PROTECTION' },
   { href: '/alerts', label: 'ALERTS' },
 ]
 

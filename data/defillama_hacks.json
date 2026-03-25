@@ -1,0 +1,6237 @@
+[
+  {
+    "protocol": "Super Sushi Samurai",
+    "slug": "super-sushi-samurai",
+    "date": "2024-03-22",
+    "loss_usd": 4800000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Unizen",
+    "slug": "unizen",
+    "date": "2024-03-08",
+    "loss_usd": 2100000000000,
+    "type": "External Call Vulnerability",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "External Call Vulnerability"
+  },
+  {
+    "protocol": "AutoShark",
+    "slug": "autoshark",
+    "date": "2021-05-24",
+    "loss_usd": 745000000000,
+    "type": "Flashloan Incentive Rewards Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "Venus Core Pool",
+    "slug": "venus-core-pool",
+    "date": "2026-03-15",
+    "loss_usd": 3700000000000,
+    "type": "Donation Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Donation Attack"
+  },
+  {
+    "protocol": "Siren",
+    "slug": "siren",
+    "date": "2021-09-03",
+    "loss_usd": 3450000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "MangoFarmSol",
+    "slug": "mangofarmsol",
+    "date": "2024-01-07",
+    "loss_usd": 2000000000000,
+    "type": "Frontend Attack",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Frontend Attack"
+  },
+  {
+    "protocol": "MyAlgo",
+    "slug": "myalgo",
+    "date": "2023-02-27",
+    "loss_usd": 9200000000000,
+    "type": "Cloudflare Key Compromised",
+    "chain": [
+      "Algorand"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Cloudflare Key Compromised"
+  },
+  {
+    "protocol": "Zunami Protocol",
+    "slug": "zunami-protocol",
+    "date": "2025-05-15",
+    "loss_usd": 500000000000,
+    "type": "withdrawStuckToken() exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "withdrawStuckToken() exploit"
+  },
+  {
+    "protocol": "Impermax V3",
+    "slug": "impermax-v3",
+    "date": "2025-11-11",
+    "loss_usd": 380000000000,
+    "type": "Zero-Rate Hack",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Zero-Rate Hack"
+  },
+  {
+    "protocol": "DAO Maker Vesting",
+    "slug": "dao-maker-vesting",
+    "date": "2021-08-12",
+    "loss_usd": 7000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "M2 Exchange",
+    "slug": "m2-exchange",
+    "date": "2024-10-31",
+    "loss_usd": 13700000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum",
+      "Solana",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "four.meme",
+    "slug": "four.meme",
+    "date": "2025-02-11",
+    "loss_usd": 183000000000,
+    "type": "Liquidity Pool Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Liquidity Pool Exploit"
+  },
+  {
+    "protocol": "Multichain",
+    "slug": "multichain",
+    "date": "2021-07-10",
+    "loss_usd": 7900000000000,
+    "type": "Private Key Compromised (Bad ECDSA Implementation)",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Bad ECDSA Implementation)"
+  },
+  {
+    "protocol": "Kannagi",
+    "slug": "kannagi",
+    "date": "2023-07-30",
+    "loss_usd": 1100000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "zkSync Era",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "xToken",
+    "slug": "xtoken",
+    "date": "2021-05-12",
+    "loss_usd": 24000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "BingX",
+    "slug": "bingx",
+    "date": "2024-09-20",
+    "loss_usd": 43300000000000,
+    "type": "Hot wallet hack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Hot wallet hack"
+  },
+  {
+    "protocol": "Thorchain DEX",
+    "slug": "thorchain-dex",
+    "date": "2021-07-22",
+    "loss_usd": 8000000000000,
+    "type": "Refund Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Refund Logic Exploit"
+  },
+  {
+    "protocol": "DAO Maker Vesting",
+    "slug": "dao-maker-vesting",
+    "date": "2021-09-04",
+    "loss_usd": 4000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "IoTeX",
+    "slug": "iotex",
+    "date": "2026-02-21",
+    "loss_usd": 8000000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Safe Dollar",
+    "slug": "safe-dollar",
+    "date": "2021-06-28",
+    "loss_usd": 248000000000,
+    "type": "Incentive Rewards Exploit",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "BetterBank",
+    "slug": "betterbank",
+    "date": "2025-08-26",
+    "loss_usd": 5000000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "PulseChain"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Grand Base",
+    "slug": "grand-base",
+    "date": "2024-04-15",
+    "loss_usd": 1700000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "FixedFloat",
+    "slug": "fixedfloat",
+    "date": "2024-02-18",
+    "loss_usd": 26100000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Saddle Finance",
+    "slug": "saddle-finance",
+    "date": "2022-04-30",
+    "loss_usd": 11000000000000,
+    "type": "Flashloan Swap Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Swap Logic Exploit"
+  },
+  {
+    "protocol": "Nomad",
+    "slug": "nomad",
+    "date": "2022-08-01",
+    "loss_usd": 190000000000000,
+    "type": "Trusted Root Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Trusted Root Exploit"
+  },
+  {
+    "protocol": "Elephant Money",
+    "slug": "elephant-money",
+    "date": "2022-04-12",
+    "loss_usd": 22200000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Euler V1",
+    "slug": "euler-v1",
+    "date": "2023-03-13",
+    "loss_usd": 197000000000000,
+    "type": "Flashloan Donate Function Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Donate Function Logic Exploit"
+  },
+  {
+    "protocol": "Unleash Protocol",
+    "slug": "unleash-protocol",
+    "date": "2025-12-30",
+    "loss_usd": 3900000000000,
+    "type": "Multisig Governance Hack",
+    "chain": [
+      "Story"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Multisig Governance Hack"
+  },
+  {
+    "protocol": "Orion Pools",
+    "slug": "orion-pools",
+    "date": "2023-02-02",
+    "loss_usd": 3000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "DIMO",
+    "slug": "dimo",
+    "date": "2025-11-07",
+    "loss_usd": 40000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Locus Finance",
+    "slug": "locus-finance",
+    "date": "2023-12-30",
+    "loss_usd": 321000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Abracadabra Spell",
+    "slug": "abracadabra-spell",
+    "date": "2024-01-30",
+    "loss_usd": 6500000000000,
+    "type": "Borrow Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Borrow Logic Exploit"
+  },
+  {
+    "protocol": "Goose Finance",
+    "slug": "goose-finance",
+    "date": "2026-03-14",
+    "loss_usd": 8435000000,
+    "type": "Share Accounting Flaw",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Share Accounting Flaw"
+  },
+  {
+    "protocol": "DEUS Finance",
+    "slug": "deus-finance",
+    "date": "2022-04-28",
+    "loss_usd": 13400000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Matcha",
+    "slug": "matcha",
+    "date": "2026-01-26",
+    "loss_usd": 16800000000000,
+    "type": "Unlimited Approval Exploit",
+    "chain": [
+      "Base",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unlimited Approval Exploit"
+  },
+  {
+    "protocol": "Aave V3",
+    "slug": "aave-v3",
+    "date": "2026-03-12",
+    "loss_usd": 862000000000,
+    "type": "CAPO Oracle Misconfiguration",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "CAPO Oracle Misconfiguration"
+  },
+  {
+    "protocol": "Level Perps",
+    "slug": "level-perps",
+    "date": "2023-05-01",
+    "loss_usd": 1000000000000,
+    "type": "Referral Claims Logic Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Referral Claims Logic Exploit"
+  },
+  {
+    "protocol": "CoinSpot",
+    "slug": "coinspot",
+    "date": "2023-11-09",
+    "loss_usd": 2400000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Alchemix",
+    "slug": "alchemix",
+    "date": "2021-06-16",
+    "loss_usd": 6500000000000,
+    "type": "Borrow Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Borrow Logic Exploit"
+  },
+  {
+    "protocol": "Peapods Finance\n\n",
+    "slug": "peapods-finance\n\n",
+    "date": "2025-07-08",
+    "loss_usd": 175000000000,
+    "type": "Oracle manipulation in user-created Pods",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle manipulation in user-created Pods"
+  },
+  {
+    "protocol": "Gala",
+    "slug": "gala",
+    "date": "2024-05-20",
+    "loss_usd": 22000000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Curio",
+    "slug": "curio",
+    "date": "2024-03-25",
+    "loss_usd": 16000000000000,
+    "type": "Voting Power Inflation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Voting Power Inflation"
+  },
+  {
+    "protocol": "Tender Finance",
+    "slug": "tender-finance",
+    "date": "2023-03-07",
+    "loss_usd": 1600000000000,
+    "type": "Outdated Oracle Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Outdated Oracle Exploit"
+  },
+  {
+    "protocol": "HyperVault",
+    "slug": "hypervault",
+    "date": "2025-09-26",
+    "loss_usd": 3600000000000,
+    "type": "Drain Vaults",
+    "chain": [
+      "Hyperliquid L1"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drain Vaults"
+  },
+  {
+    "protocol": "pump.fun",
+    "slug": "pump.fun",
+    "date": "2024-05-16",
+    "loss_usd": 2000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Polter Finance",
+    "slug": "polter-finance",
+    "date": "2024-11-16",
+    "loss_usd": 12000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Sirio Finance",
+    "slug": "sirio-finance",
+    "date": "2025-02-01",
+    "loss_usd": 2000000000000,
+    "type": "Flashloan Exploit",
+    "chain": [
+      "Hedera"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Exploit"
+  },
+  {
+    "protocol": "ValueDefi",
+    "slug": "valuedefi",
+    "date": "2021-05-07",
+    "loss_usd": 11000000000000,
+    "type": "Math Mistake Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Math Mistake Exploit"
+  },
+  {
+    "protocol": "Conic Finance",
+    "slug": "conic-finance",
+    "date": "2023-07-21",
+    "loss_usd": 3200000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "BurgerSwap",
+    "slug": "burgerswap",
+    "date": "2021-05-28",
+    "loss_usd": 7200000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Furucombo",
+    "slug": "furucombo",
+    "date": "2021-02-27",
+    "loss_usd": 14000000000000,
+    "type": "Delegatecall Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Delegatecall Exploit"
+  },
+  {
+    "protocol": "JayPegs Automart",
+    "slug": "jaypegs-automart",
+    "date": "2021-09-17",
+    "loss_usd": 3100000000000,
+    "type": "Redirected Deposits",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Redirected Deposits"
+  },
+  {
+    "protocol": "Lava",
+    "slug": "lava",
+    "date": "2024-10-04",
+    "loss_usd": 130000000000,
+    "type": "Flashloan Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Exploit"
+  },
+  {
+    "protocol": "Nobitex",
+    "slug": "nobitex",
+    "date": "2025-06-18",
+    "loss_usd": 82000000000000,
+    "type": "Hot wallet hack",
+    "chain": [
+      "Tron",
+      "Ethereum",
+      "BSC",
+      "Avalanche",
+      "Arbitrum",
+      "Polygon",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Hot wallet hack"
+  },
+  {
+    "protocol": "Hedgey",
+    "slug": "hedgey",
+    "date": "2024-04-19",
+    "loss_usd": 44700000000000,
+    "type": "Claim Contract Flashloan Exploit",
+    "chain": [
+      "Arbitrum",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Claim Contract Flashloan Exploit"
+  },
+  {
+    "protocol": "Ploutos Money",
+    "slug": "ploutos-money",
+    "date": "2026-02-26",
+    "loss_usd": 390000000000,
+    "type": "Misconfigured Oracle Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Misconfigured Oracle Exploit"
+  },
+  {
+    "protocol": "Harvest Finance",
+    "slug": "harvest-finance",
+    "date": "2020-10-26",
+    "loss_usd": 25000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Yearn Ether",
+    "slug": "yearn-ether",
+    "date": "2025-11-30",
+    "loss_usd": 9000000000000,
+    "type": "yETH stablepool Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "yETH stablepool Exploit"
+  },
+  {
+    "protocol": "Hedera",
+    "slug": "hedera",
+    "date": "2023-03-10",
+    "loss_usd": 515000000000,
+    "type": "Unknown",
+    "chain": [
+      "Hedera"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unknown"
+  },
+  {
+    "protocol": "Poloniex",
+    "slug": "poloniex",
+    "date": "2023-11-10",
+    "loss_usd": 126000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Tron",
+      "Ethereum",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "LeadBlock's Morpho Blue Market",
+    "slug": "leadblock's-morpho-blue-market",
+    "date": "2024-10-14",
+    "loss_usd": 250000000000,
+    "type": "Oracle Misconfiguration Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Misconfiguration Exploit"
+  },
+  {
+    "protocol": "Vesper Finance",
+    "slug": "vesper-finance",
+    "date": "2021-11-03",
+    "loss_usd": 3370000000000,
+    "type": "Oracle Manipulation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Manipulation"
+  },
+  {
+    "protocol": "Mango Markets V3",
+    "slug": "mango-markets-v3",
+    "date": "2022-10-11",
+    "loss_usd": 115000000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Truflation",
+    "slug": "truflation",
+    "date": "2024-09-25",
+    "loss_usd": 5000000000000,
+    "type": "Private Key Compromised (Malware)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Malware)"
+  },
+  {
+    "protocol": "SudoRare",
+    "slug": "sudorare",
+    "date": "2022-08-23",
+    "loss_usd": 800000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Curve LlamaLend",
+    "slug": "curve-llamalend",
+    "date": "2026-03-02",
+    "loss_usd": 240000000000,
+    "type": "Donation Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Donation Attack"
+  },
+  {
+    "protocol": "Wise Lending V2",
+    "slug": "wise-lending-v2",
+    "date": "2026-02-28",
+    "loss_usd": 66000000000,
+    "type": "Flashloan Exploit",
+    "chain": [
+      "Arbitrum",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Exploit"
+  },
+  {
+    "protocol": "Steadefi",
+    "slug": "steadefi",
+    "date": "2023-08-08",
+    "loss_usd": 1157000000000,
+    "type": "Deployer Wallet Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Deployer Wallet Compromised"
+  },
+  {
+    "protocol": "Crypto.com",
+    "slug": "crypto.com",
+    "date": "2022-01-18",
+    "loss_usd": 33700000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "0G Labs",
+    "slug": "0g-labs",
+    "date": "2025-12-11",
+    "loss_usd": 516000000000,
+    "type": "emergencyWithdraw Function Exploit",
+    "chain": [
+      "0G"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "emergencyWithdraw Function Exploit"
+  },
+  {
+    "protocol": "Dexible V2",
+    "slug": "dexible-v2",
+    "date": "2023-02-20",
+    "loss_usd": 2000000000000,
+    "type": "Arbitrary External Call",
+    "chain": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Arbitrary External Call"
+  },
+  {
+    "protocol": "Ooki",
+    "slug": "ooki",
+    "date": "2020-02-15",
+    "loss_usd": 350000000000,
+    "type": "Flashloan Slippage Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Slippage Attack"
+  },
+  {
+    "protocol": "Bond Protocol",
+    "slug": "bond-protocol",
+    "date": "2022-10-21",
+    "loss_usd": 300000000000,
+    "type": "Arbitrary External Call",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Arbitrary External Call"
+  },
+  {
+    "protocol": "Portal",
+    "slug": "portal",
+    "date": "2022-02-02",
+    "loss_usd": 326000000000000,
+    "type": "Signature Exploit",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Signature Exploit"
+  },
+  {
+    "protocol": "Moola Market",
+    "slug": "moola-market",
+    "date": "2022-10-18",
+    "loss_usd": 8400000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Celo"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "FutureSwap",
+    "slug": "futureswap",
+    "date": "2025-12-16",
+    "loss_usd": 270000000000,
+    "type": "Flashloan Governance Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Governance Attack"
+  },
+  {
+    "protocol": "Cyrus Finance",
+    "slug": "cyrus-finance",
+    "date": "2026-03-22",
+    "loss_usd": 5000000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "Cover Protocol",
+    "slug": "cover-protocol",
+    "date": "2020-12-29",
+    "loss_usd": 9400000000000,
+    "type": "Incentives Function Mistake",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Incentives Function Mistake"
+  },
+  {
+    "protocol": "Port3 Network",
+    "slug": "port3-network",
+    "date": "2025-11-23",
+    "loss_usd": 166000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "NowSwap",
+    "slug": "nowswap",
+    "date": "2021-09-15",
+    "loss_usd": 1000000000000,
+    "type": "Inconsistent Value in Code",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Inconsistent Value in Code"
+  },
+  {
+    "protocol": "XBridge",
+    "slug": "xbridge",
+    "date": "2024-04-24",
+    "loss_usd": 1800000000000,
+    "type": null,
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "BNS",
+    "slug": "bns",
+    "date": "2022-02-01",
+    "loss_usd": 7500000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "CoinEx",
+    "slug": "coinex",
+    "date": "2023-09-12",
+    "loss_usd": 55000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Bitcoin",
+      "Tron",
+      "Kadena",
+      "Solana",
+      "Dagger",
+      "XRP",
+      "BitcoinCash",
+      "Polygon",
+      "Stellar",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "ZKsync",
+    "slug": "zksync",
+    "date": "2025-04-15",
+    "loss_usd": 5000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Orange Finance",
+    "slug": "orange-finance",
+    "date": "2025-01-08",
+    "loss_usd": 840000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Tapioca DAO",
+    "slug": "tapioca-dao",
+    "date": "2024-10-18",
+    "loss_usd": 4700000000000,
+    "type": "Private Key Compromised (Social Engineering)",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Social Engineering)"
+  },
+  {
+    "protocol": "Kinto Bridge",
+    "slug": "kinto-bridge",
+    "date": "2025-07-10",
+    "loss_usd": 1550000000000,
+    "type": "ERC1967Proxy Backdoor Hijack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "ERC1967Proxy Backdoor Hijack"
+  },
+  {
+    "protocol": "SolvBTC",
+    "slug": "solvbtc",
+    "date": "2026-03-06",
+    "loss_usd": 2700000000000,
+    "type": "Mint Reserves Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Mint Reserves Logic Exploit"
+  },
+  {
+    "protocol": "Truebit",
+    "slug": "truebit",
+    "date": "2026-01-08",
+    "loss_usd": 26400000000000,
+    "type": "Bonding Curve Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Bonding Curve Exploit"
+  },
+  {
+    "protocol": "KyberSwap Classic",
+    "slug": "kyberswap-classic",
+    "date": "2022-09-01",
+    "loss_usd": 265000000000,
+    "type": "Cloudflare Key Compromised",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Cloudflare Key Compromised"
+  },
+  {
+    "protocol": "Skyward Finance",
+    "slug": "skyward-finance",
+    "date": "2022-11-02",
+    "loss_usd": 3000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Near"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Exactly",
+    "slug": "exactly",
+    "date": "2023-08-18",
+    "loss_usd": 7200000000000,
+    "type": "DebtManager Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "DebtManager Exploit"
+  },
+  {
+    "protocol": "Upbit",
+    "slug": "upbit",
+    "date": "2025-11-26",
+    "loss_usd": 36000000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Popsicle Finance",
+    "slug": "popsicle-finance",
+    "date": "2021-08-03",
+    "loss_usd": 20000000000000,
+    "type": "Flashloan Incentive Rewards Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "Qubit",
+    "slug": "qubit",
+    "date": "2022-01-28",
+    "loss_usd": 80000000000000,
+    "type": "Transfer Logic Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Transfer Logic Exploit"
+  },
+  {
+    "protocol": "Bald",
+    "slug": "bald",
+    "date": "2023-08-02",
+    "loss_usd": 23000000000000,
+    "type": "Drained Liquidity Pool",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Liquidity Pool"
+  },
+  {
+    "protocol": "Odin.Fun",
+    "slug": "odin.fun",
+    "date": "2025-08-12",
+    "loss_usd": 7000000000000,
+    "type": "Liquidity Manipulation Exploit",
+    "chain": [
+      "ICP"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Liquidity Manipulation Exploit"
+  },
+  {
+    "protocol": "OcelotDex",
+    "slug": "ocelotdex",
+    "date": "2024-09-20",
+    "loss_usd": 4900000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Tectonic",
+    "slug": "tectonic",
+    "date": "2024-02-22",
+    "loss_usd": 250000000000,
+    "type": "Flashloan New Market Exploit",
+    "chain": [
+      "Cronos"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan New Market Exploit"
+  },
+  {
+    "protocol": "ApeRocket",
+    "slug": "aperocket",
+    "date": "2021-07-14",
+    "loss_usd": 1260000000000,
+    "type": "Flashloan Incentive Rewards Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "MonoX",
+    "slug": "monox",
+    "date": "2021-11-30",
+    "loss_usd": 31400000000000,
+    "type": "Swap Function Exploit",
+    "chain": [
+      "Ethereum",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Swap Function Exploit"
+  },
+  {
+    "protocol": "Hyperdrive HL",
+    "slug": "hyperdrive-hl",
+    "date": "2025-09-27",
+    "loss_usd": 773000000000,
+    "type": "Router Exploit",
+    "chain": [
+      "Hyperliquid L1"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Router Exploit"
+  },
+  {
+    "protocol": "Radiant V2",
+    "slug": "radiant-v2",
+    "date": "2024-10-16",
+    "loss_usd": 53000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "SBI Crypto",
+    "slug": "sbi-crypto",
+    "date": "2025-09-24",
+    "loss_usd": 24000000000000,
+    "type": null,
+    "chain": [
+      "Bitcoin",
+      "Ethereum",
+      "Litecoin",
+      "Doge",
+      "BitcoinCash"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Abracadabra Spell",
+    "slug": "abracadabra-spell",
+    "date": "2025-10-04",
+    "loss_usd": 1700000000000,
+    "type": "Sequential State Manipulation Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Sequential State Manipulation Exploit"
+  },
+  {
+    "protocol": "OlaXBT",
+    "slug": "olaxbt",
+    "date": "2025-09-01",
+    "loss_usd": 2000000000000,
+    "type": "Multisig wallet Social Engineering Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Multisig wallet Social Engineering Exploit"
+  },
+  {
+    "protocol": "EasyFi",
+    "slug": "easyfi",
+    "date": "2021-04-19",
+    "loss_usd": 59000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Binance Bridge",
+    "slug": "binance-bridge",
+    "date": "2022-10-06",
+    "loss_usd": 570000000000000,
+    "type": "Proof Verifier Bug",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Proof Verifier Bug"
+  },
+  {
+    "protocol": "Midas Capital",
+    "slug": "midas-capital",
+    "date": "2023-01-17",
+    "loss_usd": 660000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Dough Finance",
+    "slug": "dough-finance",
+    "date": "2024-07-12",
+    "loss_usd": 1960000000000,
+    "type": "Unvalidated call data exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unvalidated call data exploit"
+  },
+  {
+    "protocol": "ParaSpace Lending V1",
+    "slug": "paraspace-lending-v1",
+    "date": "2023-03-17",
+    "loss_usd": 5000000000000,
+    "type": "Borrow Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Borrow Logic Exploit"
+  },
+  {
+    "protocol": "Solareum",
+    "slug": "solareum",
+    "date": "2024-03-29",
+    "loss_usd": 1400000000000,
+    "type": "Private Key Compromised (Social Engineering)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Social Engineering)"
+  },
+  {
+    "protocol": "Kame Aggregator",
+    "slug": "kame-aggregator",
+    "date": "2025-09-12",
+    "loss_usd": 1300000000000,
+    "type": "swap() Function Flaw",
+    "chain": [
+      "Sei"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "swap() Function Flaw"
+  },
+  {
+    "protocol": "Cardex",
+    "slug": "cardex",
+    "date": "2025-02-18",
+    "loss_usd": 400000000000,
+    "type": "Private Key Compromised (Session signer)",
+    "chain": [
+      "Abstract"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Session signer)"
+  },
+  {
+    "protocol": "Munchables",
+    "slug": "munchables",
+    "date": "2024-03-26",
+    "loss_usd": 62500000000000,
+    "type": "Storage Slot Exploit",
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Storage Slot Exploit"
+  },
+  {
+    "protocol": "Ronin Bridge",
+    "slug": "ronin-bridge",
+    "date": "2022-03-23",
+    "loss_usd": 624000000000000,
+    "type": "Private Key Compromised (Social Engineering)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Social Engineering)"
+  },
+  {
+    "protocol": "Superfluid",
+    "slug": "superfluid",
+    "date": "2022-02-08",
+    "loss_usd": 8700000000000,
+    "type": "CTX Exploit",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "CTX Exploit"
+  },
+  {
+    "protocol": "Earning.Farm",
+    "slug": "earning.farm",
+    "date": "2023-08-09",
+    "loss_usd": 540000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Fortress Loans",
+    "slug": "fortress-loans",
+    "date": "2022-05-08",
+    "loss_usd": 3000000000000,
+    "type": "Governance and Oracle Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Governance and Oracle Exploit"
+  },
+  {
+    "protocol": "Corepound",
+    "slug": "corepound",
+    "date": "2025-09-23",
+    "loss_usd": 430000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "CORE"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Venus Core Pool",
+    "slug": "venus-core-pool",
+    "date": "2025-03-29",
+    "loss_usd": 902000000000,
+    "type": "Donation Attack",
+    "chain": [
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Donation Attack"
+  },
+  {
+    "protocol": "Lodestar V0",
+    "slug": "lodestar-v0",
+    "date": "2022-12-10",
+    "loss_usd": 6900000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Ooki",
+    "slug": "ooki",
+    "date": "2021-11-05",
+    "loss_usd": 55000000000000,
+    "type": "Private Key Compromised (Phishing)",
+    "chain": [
+      "Polygon",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Phishing)"
+  },
+  {
+    "protocol": "LiFi Finance",
+    "slug": "lifi-finance",
+    "date": "2024-07-16",
+    "loss_usd": 9730000000000,
+    "type": "Router Exploit via Infinite Approvals",
+    "chain": [
+      "zkSync Era",
+      "Linea",
+      "Metis"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Router Exploit via Infinite Approvals"
+  },
+  {
+    "protocol": "Holograph",
+    "slug": "holograph",
+    "date": "2024-06-13",
+    "loss_usd": 6700000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Growth DeFi",
+    "slug": "growth-defi",
+    "date": "2021-02-09",
+    "loss_usd": 1300000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Loopscale",
+    "slug": "loopscale",
+    "date": "2025-04-26",
+    "loss_usd": 5800000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "AlphaPo",
+    "slug": "alphapo",
+    "date": "2023-07-26",
+    "loss_usd": 60000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Tron"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Stake.com",
+    "slug": "stake.com",
+    "date": "2023-09-04",
+    "loss_usd": 41300000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "DeltaPrime",
+    "slug": "deltaprime",
+    "date": "2024-07-23",
+    "loss_usd": 1000000000000,
+    "type": null,
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Blizz Finance",
+    "slug": "blizz-finance",
+    "date": "2022-05-13",
+    "loss_usd": 21800000000000,
+    "type": "Outdated Oracle Exploit",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Outdated Oracle Exploit"
+  },
+  {
+    "protocol": "BearnFi",
+    "slug": "bearnfi",
+    "date": "2021-05-17",
+    "loss_usd": 18000000000000,
+    "type": "Flashloan Withdraw Logic Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Withdraw Logic Exploit"
+  },
+  {
+    "protocol": "GMBL.COMPUTER",
+    "slug": "gmbl.computer",
+    "date": "2023-09-06",
+    "loss_usd": 815000000000,
+    "type": "Referral Claims Logic Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Referral Claims Logic Exploit"
+  },
+  {
+    "protocol": "GMX V1 Perps",
+    "slug": "gmx-v1-perps",
+    "date": "2022-09-18",
+    "loss_usd": 565000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Grim Finance",
+    "slug": "grim-finance",
+    "date": "2021-12-18",
+    "loss_usd": 30000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Treasure",
+    "slug": "treasure",
+    "date": "2022-03-03",
+    "loss_usd": 1400000000000,
+    "type": "Buy Function Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Buy Function Exploit"
+  },
+  {
+    "protocol": "Themis Protocol",
+    "slug": "themis-protocol",
+    "date": "2023-06-27",
+    "loss_usd": 370000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Allbridge Core",
+    "slug": "allbridge-core",
+    "date": "2023-04-02",
+    "loss_usd": 650000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Kronos Research",
+    "slug": "kronos-research",
+    "date": "2023-11-18",
+    "loss_usd": 26000000000000,
+    "type": "API Key unauthorized access",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "API Key unauthorized access"
+  },
+  {
+    "protocol": "Curve DEX",
+    "slug": "curve-dex",
+    "date": "2023-07-30",
+    "loss_usd": 61700000000000,
+    "type": "Vyper Compiler Bug",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Vyper Compiler Bug"
+  },
+  {
+    "protocol": "Inverse Finance Frontier",
+    "slug": "inverse-finance-frontier",
+    "date": "2022-04-02",
+    "loss_usd": 15600000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Sturdy V1",
+    "slug": "sturdy-v1",
+    "date": "2023-06-12",
+    "loss_usd": 770000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Heco Bridge",
+    "slug": "heco-bridge",
+    "date": "2023-11-22",
+    "loss_usd": 86600000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Wise Lending V1",
+    "slug": "wise-lending-v1",
+    "date": "2024-01-12",
+    "loss_usd": 464000000000,
+    "type": "Rounding Donation Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Rounding Donation Attack"
+  },
+  {
+    "protocol": "Lendf.me",
+    "slug": "lendf.me",
+    "date": "2020-04-19",
+    "loss_usd": 1200000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "ForceBridge",
+    "slug": "forcebridge",
+    "date": "2025-06-06",
+    "loss_usd": 3900000000000,
+    "type": "Acces Control Exploit",
+    "chain": [
+      "Nervos"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Acces Control Exploit"
+  },
+  {
+    "protocol": "BtcTurk\n",
+    "slug": "btcturk\n",
+    "date": "2025-08-14",
+    "loss_usd": 48000000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum",
+      "Avalanche",
+      "Arbitrum",
+      "Base",
+      "Optimism",
+      "Mantle",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "ElasticSwap",
+    "slug": "elasticswap",
+    "date": "2022-12-13",
+    "loss_usd": 854000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Avalanche",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Onyx Protocol",
+    "slug": "onyx-protocol",
+    "date": "2023-11-01",
+    "loss_usd": 2100000000000,
+    "type": "Flashloan Donate Function Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Donate Function Logic Exploit"
+  },
+  {
+    "protocol": "Magpie Protocol",
+    "slug": "magpie-protocol",
+    "date": "2024-04-23",
+    "loss_usd": 129000000000,
+    "type": "Router Exploit",
+    "chain": [
+      "Ethereum",
+      "Polygon",
+      "BSC",
+      "Blast",
+      "Avalanche",
+      "Arbitrum",
+      "Optimism",
+      "Base",
+      "zkSync Era",
+      "Polygon zkEVM"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Router Exploit"
+  },
+  {
+    "protocol": "Hundred Finance",
+    "slug": "hundred-finance",
+    "date": "2023-04-15",
+    "loss_usd": 7000000000000,
+    "type": "Flashloan Donate Function Logic Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Donate Function Logic Exploit"
+  },
+  {
+    "protocol": "Hope Finance",
+    "slug": "hope-finance",
+    "date": "2023-02-20",
+    "loss_usd": 1860000000000,
+    "type": "Router Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Router Exploit"
+  },
+  {
+    "protocol": "LuBian",
+    "slug": "lubian",
+    "date": "2020-12-28",
+    "loss_usd": 3500000000000000,
+    "type": "Private Key Compromised (Brute Force)",
+    "chain": [
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Brute Force)"
+  },
+  {
+    "protocol": "Mirror",
+    "slug": "mirror",
+    "date": "2021-10-08",
+    "loss_usd": 2000000000000,
+    "type": "Outdated Oracle Exploit",
+    "chain": [
+      "Terra"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Outdated Oracle Exploit"
+  },
+  {
+    "protocol": "Ionic Protocol",
+    "slug": "ionic-protocol",
+    "date": "2025-02-04",
+    "loss_usd": 4000000000000,
+    "type": "Fake Collateral Exploit",
+    "chain": [
+      "Mode"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Fake Collateral Exploit"
+  },
+  {
+    "protocol": "Yearn Finance",
+    "slug": "yearn-finance",
+    "date": "2021-02-05",
+    "loss_usd": 11000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Florence Finance",
+    "slug": "florence-finance",
+    "date": "2023-11-30",
+    "loss_usd": 1450000000000,
+    "type": "Address Poisoning",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Address Poisoning"
+  },
+  {
+    "protocol": "Rari Capital",
+    "slug": "rari-capital",
+    "date": "2021-05-08",
+    "loss_usd": 10000000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "dForce Lending",
+    "slug": "dforce-lending",
+    "date": "2020-04-19",
+    "loss_usd": 25000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Zabu Finance",
+    "slug": "zabu-finance",
+    "date": "2021-09-12",
+    "loss_usd": 3200000000000,
+    "type": "Flashloan Exploit",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Exploit"
+  },
+  {
+    "protocol": "Magnate Finance",
+    "slug": "magnate-finance",
+    "date": "2023-08-25",
+    "loss_usd": 6400000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Fusion by IPOR",
+    "slug": "fusion-by-ipor",
+    "date": "2026-01-06",
+    "loss_usd": 336000000000,
+    "type": "EIP-7702 Delegation Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "EIP-7702 Delegation Exploit"
+  },
+  {
+    "protocol": "Sentiment",
+    "slug": "sentiment",
+    "date": "2023-04-04",
+    "loss_usd": 1000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "CrediX",
+    "slug": "credix",
+    "date": "2025-08-04",
+    "loss_usd": 4500000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Sonic"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Bunny",
+    "slug": "bunny",
+    "date": "2021-07-16",
+    "loss_usd": 2400000000000,
+    "type": "Flashloan Incentive Rewards Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "StableMagnet",
+    "slug": "stablemagnet",
+    "date": "2021-06-23",
+    "loss_usd": 27000000000000,
+    "type": "Drained Contracts and User Wallets",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts and User Wallets"
+  },
+  {
+    "protocol": "Agave",
+    "slug": "agave",
+    "date": "2022-03-15",
+    "loss_usd": 5500000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Gnosis Chain"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Atlantis Loans",
+    "slug": "atlantis-loans",
+    "date": "2023-06-10",
+    "loss_usd": 116000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Bitrue",
+    "slug": "bitrue",
+    "date": "2023-04-14",
+    "loss_usd": 23000000000000,
+    "type": "Hot wallet hack",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Hot wallet hack"
+  },
+  {
+    "protocol": "PRXVT",
+    "slug": "prxvt",
+    "date": "2026-01-01",
+    "loss_usd": 97000000000,
+    "type": "Sybil Attack with CREATE2 Addresses",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Sybil Attack with CREATE2 Addresses"
+  },
+  {
+    "protocol": "Meter",
+    "slug": "meter",
+    "date": "2022-02-06",
+    "loss_usd": 7700000000000,
+    "type": "Deposit Function Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Deposit Function Exploit"
+  },
+  {
+    "protocol": "Punk Protocol",
+    "slug": "punk-protocol",
+    "date": "2021-08-10",
+    "loss_usd": 8950000000000,
+    "type": "Delegatecall Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Delegatecall Exploit"
+  },
+  {
+    "protocol": "TMX TRIBE",
+    "slug": "tmx-tribe",
+    "date": "2026-01-05",
+    "loss_usd": 1400000000000,
+    "type": "Mint & Stake Loop Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Mint & Stake Loop Exploit"
+  },
+  {
+    "protocol": "Clipper",
+    "slug": "clipper",
+    "date": "2024-12-01",
+    "loss_usd": 450000000000,
+    "type": "API Signature Exploit",
+    "chain": [
+      "Optimism",
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "API Signature Exploit"
+  },
+  {
+    "protocol": "Defrost",
+    "slug": "defrost",
+    "date": "2022-12-24",
+    "loss_usd": 6000000000000,
+    "type": "Oracle Manipulation",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Manipulation"
+  },
+  {
+    "protocol": "Raydium AMM",
+    "slug": "raydium-amm",
+    "date": "2022-12-16",
+    "loss_usd": 4400000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Squid Games",
+    "slug": "squid-games",
+    "date": "2021-11-03",
+    "loss_usd": 3400000000000,
+    "type": "Drained Liquidity Pool",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Liquidity Pool"
+  },
+  {
+    "protocol": "SuperRare",
+    "slug": "superrare",
+    "date": "2025-07-28",
+    "loss_usd": 730000000000,
+    "type": "updateMerkleRoot Access Control Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "updateMerkleRoot Access Control Exploit"
+  },
+  {
+    "protocol": "DMM Bitcoin",
+    "slug": "dmm-bitcoin",
+    "date": "2024-05-31",
+    "loss_usd": 305000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "ValueDefi",
+    "slug": "valuedefi",
+    "date": "2020-11-14",
+    "loss_usd": 7000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Shido",
+    "slug": "shido",
+    "date": "2024-02-29",
+    "loss_usd": 3300000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Dexodus Finance",
+    "slug": "dexodus-finance",
+    "date": "2025-05-26",
+    "loss_usd": 300000000000,
+    "type": "Price Manipulation Attack",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Manipulation Attack"
+  },
+  {
+    "protocol": "Panoptic V1.1",
+    "slug": "panoptic-v1.1",
+    "date": "2025-08-25",
+    "loss_usd": 0,
+    "type": null,
+    "chain": [
+      "Base",
+      "Unichain",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "dYdX V3",
+    "slug": "dydx-v3",
+    "date": "2023-11-18",
+    "loss_usd": 9000000000000,
+    "type": "Price Manipulation Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Manipulation Attack"
+  },
+  {
+    "protocol": "zkFinance",
+    "slug": "zkfinance",
+    "date": "2024-11-11",
+    "loss_usd": 200000000000,
+    "type": "Oracle Misconfiguration Exploit",
+    "chain": [
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Misconfiguration Exploit"
+  },
+  {
+    "protocol": "xToken",
+    "slug": "xtoken",
+    "date": "2021-08-29",
+    "loss_usd": 4500000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Typus Perp",
+    "slug": "typus-perp",
+    "date": "2025-10-15",
+    "loss_usd": 3400000000000,
+    "type": "TLP Contract Exploit",
+    "chain": [
+      "Sui"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "TLP Contract Exploit"
+  },
+  {
+    "protocol": "Garden",
+    "slug": "garden",
+    "date": "2025-10-30",
+    "loss_usd": 10800000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum",
+      "Arbitrum",
+      "Base",
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Roe Finance",
+    "slug": "roe-finance",
+    "date": "2023-01-11",
+    "loss_usd": 80000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "Ethereum",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "Gamma",
+    "slug": "gamma",
+    "date": "2024-01-04",
+    "loss_usd": 4500000000000,
+    "type": "Price Manipulation Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Manipulation Attack"
+  },
+  {
+    "protocol": "Ronin Bridge",
+    "slug": "ronin-bridge",
+    "date": "2024-08-06",
+    "loss_usd": 12000000000000,
+    "type": "MEV bot manipulation exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "MEV bot manipulation exploit"
+  },
+  {
+    "protocol": "Omm",
+    "slug": "omm",
+    "date": "2023-01-21",
+    "loss_usd": 1891000000000,
+    "type": "Redeem Function Exploit",
+    "chain": [
+      "Icon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Redeem Function Exploit"
+  },
+  {
+    "protocol": "uniBTC",
+    "slug": "unibtc",
+    "date": "2024-09-26",
+    "loss_usd": 1700000000000,
+    "type": "Minting Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Minting Logic Exploit"
+  },
+  {
+    "protocol": "KiloEx",
+    "slug": "kiloex",
+    "date": "2025-04-14",
+    "loss_usd": 7500000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "BSC",
+      "Base",
+      "Taiko"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "Clober Liquidity Vault",
+    "slug": "clober-liquidity-vault",
+    "date": "2024-12-10",
+    "loss_usd": 500000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "dTRINITY dLEND",
+    "slug": "dtrinity-dlend",
+    "date": "2026-03-17",
+    "loss_usd": 257000000000,
+    "type": "Deposit Inflation Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Deposit Inflation Attack"
+  },
+  {
+    "protocol": "Badger DAO",
+    "slug": "badger-dao",
+    "date": "2021-12-02",
+    "loss_usd": 120000000000000,
+    "type": "Cloudflare Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Cloudflare Key Compromised"
+  },
+  {
+    "protocol": "Convergence",
+    "slug": "convergence",
+    "date": "2024-08-01",
+    "loss_usd": 210000000000,
+    "type": "Missing Input Validation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Missing Input Validation"
+  },
+  {
+    "protocol": "Raga Finance",
+    "slug": "raga-finance",
+    "date": "2025-11-22",
+    "loss_usd": 18500000000,
+    "type": "HyperEVM Delta Neutral Exploit",
+    "chain": [
+      "Hyperliquid L1"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "HyperEVM Delta Neutral Exploit"
+  },
+  {
+    "protocol": "DuelBits",
+    "slug": "duelbits",
+    "date": "2024-02-13",
+    "loss_usd": 4600000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Wintermute",
+    "slug": "wintermute",
+    "date": "2022-06-05",
+    "loss_usd": 27600000000000,
+    "type": "Cross Chain Multisig Deployment Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Cross Chain Multisig Deployment Exploit"
+  },
+  {
+    "protocol": "SharedStake",
+    "slug": "sharedstake",
+    "date": "2023-09-01",
+    "loss_usd": 175000000000,
+    "type": "Ownership Override Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Ownership Override Attack"
+  },
+  {
+    "protocol": "Mars Perps",
+    "slug": "mars-perps",
+    "date": "2025-12-14",
+    "loss_usd": 960000000000,
+    "type": "Thin-Market Skew Exploit",
+    "chain": [
+      "Neutron"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Thin-Market Skew Exploit"
+  },
+  {
+    "protocol": "Vestra DAO",
+    "slug": "vestra-dao",
+    "date": "2024-12-04",
+    "loss_usd": 500000000000,
+    "type": "Staking Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Staking Logic Exploit"
+  },
+  {
+    "protocol": "Indexed Finance",
+    "slug": "indexed-finance",
+    "date": "2021-10-14",
+    "loss_usd": 16000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Remitano",
+    "slug": "remitano",
+    "date": "2023-09-15",
+    "loss_usd": 2700000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Tron",
+      "BitcoinCash"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Molt EVM",
+    "slug": "molt-evm",
+    "date": "2026-03-07",
+    "loss_usd": 127000000000,
+    "type": "onlySpawnerToken Modifier Hack",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "onlySpawnerToken Modifier Hack"
+  },
+  {
+    "protocol": "PeopleDAO",
+    "slug": "peopledao",
+    "date": "2023-03-08",
+    "loss_usd": 120000000000,
+    "type": "Social Engineering",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Social Engineering"
+  },
+  {
+    "protocol": "Midas Capital",
+    "slug": "midas-capital",
+    "date": "2023-06-17",
+    "loss_usd": 600000000000,
+    "type": "Redeem Rounding Error Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Redeem Rounding Error Exploit"
+  },
+  {
+    "protocol": "pNetwork",
+    "slug": "pnetwork",
+    "date": "2021-10-04",
+    "loss_usd": 13000000000000,
+    "type": "Log Spoofing",
+    "chain": [
+      "BSC",
+      "Bitcoin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Log Spoofing"
+  },
+  {
+    "protocol": "Evoq Finance",
+    "slug": "evoq-finance",
+    "date": "2025-09-10",
+    "loss_usd": 420000000000,
+    "type": "Advanced Persistent Threat (APT) attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Advanced Persistent Threat (APT) attack"
+  },
+  {
+    "protocol": "Ribbon",
+    "slug": "ribbon",
+    "date": "2025-12-12",
+    "loss_usd": 2700000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "KuCoin",
+    "slug": "kucoin",
+    "date": "2020-09-29",
+    "loss_usd": 45000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "ETHTrustFund",
+    "slug": "ethtrustfund",
+    "date": "2024-07-22",
+    "loss_usd": 2100000000000,
+    "type": "Transferred Treasury to Mixers",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Transferred Treasury to Mixers"
+  },
+  {
+    "protocol": "Berally",
+    "slug": "berally",
+    "date": "2025-03-14",
+    "loss_usd": 90000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Berachain"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Unibot",
+    "slug": "unibot",
+    "date": "2023-10-31",
+    "loss_usd": 640000000000,
+    "type": "Token approval exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Token approval exploit"
+  },
+  {
+    "protocol": "Cork V1",
+    "slug": "cork-v1",
+    "date": "2025-05-28",
+    "loss_usd": 12000000000000,
+    "type": "Access control bypass via hook",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access control bypass via hook"
+  },
+  {
+    "protocol": "Safemoon",
+    "slug": "safemoon",
+    "date": "2023-03-28",
+    "loss_usd": 8900000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "PolyNetwork",
+    "slug": "polynetwork",
+    "date": "2024-08-12",
+    "loss_usd": 5000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "PolyNetwork"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "FTX",
+    "slug": "ftx",
+    "date": "2022-11-12",
+    "loss_usd": 450000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "OKX NFT Aggregator",
+    "slug": "okx-nft-aggregator",
+    "date": "2024-06-20",
+    "loss_usd": 14000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "KyberSwap Elastic",
+    "slug": "kyberswap-elastic",
+    "date": "2023-11-22",
+    "loss_usd": 48000000000000,
+    "type": "Flashloan Swap Logic Exploit",
+    "chain": [
+      "Ethereum",
+      "Base",
+      "Polygon",
+      "Optimism",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Swap Logic Exploit"
+  },
+  {
+    "protocol": "Zunami Protocol",
+    "slug": "zunami-protocol",
+    "date": "2023-08-13",
+    "loss_usd": 2100000000000,
+    "type": "Price Manipulation Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Manipulation Attack"
+  },
+  {
+    "protocol": "Balancer V2",
+    "slug": "balancer-v2",
+    "date": "2025-11-03",
+    "loss_usd": 128000000000000,
+    "type": "Composable Stable Pools Exploit",
+    "chain": [
+      "Ethereum",
+      "Arbitrum",
+      "Base",
+      "Polygon",
+      "Sonic",
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Composable Stable Pools Exploit"
+  },
+  {
+    "protocol": "Rodeo",
+    "slug": "rodeo",
+    "date": "2023-07-04",
+    "loss_usd": 90000000000,
+    "type": "Mint Reserves Logic Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Mint Reserves Logic Exploit"
+  },
+  {
+    "protocol": "Coincheck",
+    "slug": "coincheck",
+    "date": "2018-01-26",
+    "loss_usd": 534000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "NEM"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Parity Multisig",
+    "slug": "parity-multisig",
+    "date": "2017-11-09",
+    "loss_usd": 150000000000000,
+    "type": "Contract not initialized",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Contract not initialized"
+  },
+  {
+    "protocol": "Local Traders",
+    "slug": "local-traders",
+    "date": "2023-05-24",
+    "loss_usd": 118000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Sonne Finance",
+    "slug": "sonne-finance",
+    "date": "2024-05-15",
+    "loss_usd": 20000000000000,
+    "type": "Flashloan Donate Function Logic Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Donate Function Logic Exploit"
+  },
+  {
+    "protocol": "Atomic Wallet",
+    "slug": "atomic-wallet",
+    "date": "2023-06-03",
+    "loss_usd": 100000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Tron",
+      "BSC",
+      "Bitcoin",
+      "Polkadot",
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "AscenDEX",
+    "slug": "ascendex",
+    "date": "2021-12-11",
+    "loss_usd": 77000000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Spectral Labs",
+    "slug": "spectral-labs",
+    "date": "2024-12-01",
+    "loss_usd": 200000000000,
+    "type": "Bonding Curve Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Bonding Curve Exploit"
+  },
+  {
+    "protocol": "Moonwell Lending",
+    "slug": "moonwell-lending",
+    "date": "2025-11-04",
+    "loss_usd": 1000000000000,
+    "type": "Oracle Price Feed Manipulation",
+    "chain": [
+      "Base",
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Price Feed Manipulation"
+  },
+  {
+    "protocol": "Step Finance",
+    "slug": "step-finance",
+    "date": "2026-01-31",
+    "loss_usd": 40000000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Hundred Finance",
+    "slug": "hundred-finance",
+    "date": "2022-03-15",
+    "loss_usd": 6200000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Gnosis Chain"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Ankr",
+    "slug": "ankr",
+    "date": "2022-12-02",
+    "loss_usd": 5000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "CREAM Lending",
+    "slug": "cream-lending",
+    "date": "2021-08-30",
+    "loss_usd": 18800000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Deribit",
+    "slug": "deribit",
+    "date": "2022-11-01",
+    "loss_usd": 28000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "DeltaPrime",
+    "slug": "deltaprime",
+    "date": "2024-11-11",
+    "loss_usd": 4800000000000,
+    "type": "Debt Swap Exploit",
+    "chain": [
+      "Arbitrum",
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Debt Swap Exploit"
+  },
+  {
+    "protocol": "Shibarium",
+    "slug": "shibarium",
+    "date": "2025-09-13",
+    "loss_usd": 3000000000000,
+    "type": "Validator Stake Manipulation by Flashloan",
+    "chain": [
+      "Shibarium"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Validator Stake Manipulation by Flashloan"
+  },
+  {
+    "protocol": "Kokomo Finance",
+    "slug": "kokomo-finance",
+    "date": "2023-03-27",
+    "loss_usd": 4000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "DEXX",
+    "slug": "dexx",
+    "date": "2024-11-16",
+    "loss_usd": 21000000000000,
+    "type": "Private Key Compromised (Stored Publicly)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Stored Publicly)"
+  },
+  {
+    "protocol": "WOOFi Swap",
+    "slug": "woofi-swap",
+    "date": "2024-03-05",
+    "loss_usd": 8500000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "PrismaLST",
+    "slug": "prismalst",
+    "date": "2024-03-28",
+    "loss_usd": 11600000000000,
+    "type": "Flashloan Trove Manipulation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Trove Manipulation"
+  },
+  {
+    "protocol": "Trinity Wallet",
+    "slug": "trinity-wallet",
+    "date": "2020-02-12",
+    "loss_usd": 2350000000000,
+    "type": "Cloudflare Key Compromised",
+    "chain": [
+      "Iota"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Cloudflare Key Compromised"
+  },
+  {
+    "protocol": "Bittensor",
+    "slug": "bittensor",
+    "date": "2024-07-02",
+    "loss_usd": 8000000000000,
+    "type": "Private Key Compromised (Supply Chain Attack)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Supply Chain Attack)"
+  },
+  {
+    "protocol": "Abracadabra Spell",
+    "slug": "abracadabra-spell",
+    "date": "2025-03-25",
+    "loss_usd": 13000000000000,
+    "type": null,
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Bitmart",
+    "slug": "bitmart",
+    "date": "2021-12-04",
+    "loss_usd": 196000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "LendHub",
+    "slug": "lendhub",
+    "date": "2023-01-16",
+    "loss_usd": 6000000000000,
+    "type": "Collateral Offboarding Mistake",
+    "chain": [
+      "Heco"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Collateral Offboarding Mistake"
+  },
+  {
+    "protocol": "Paid Network",
+    "slug": "paid-network",
+    "date": "2021-03-05",
+    "loss_usd": 27000000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Revert Lend",
+    "slug": "revert-lend",
+    "date": "2026-01-29",
+    "loss_usd": 50000000000,
+    "type": "Staked Collateral Exploit",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Staked Collateral Exploit"
+  },
+  {
+    "protocol": "Compound V2",
+    "slug": "compound-v2",
+    "date": "2021-09-29",
+    "loss_usd": 147000000000000,
+    "type": "Math Mistake Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Math Mistake Exploit"
+  },
+  {
+    "protocol": "Coinbase",
+    "slug": "coinbase",
+    "date": "2025-08-13",
+    "loss_usd": 300000000000,
+    "type": "MEV composability attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "MEV composability attack"
+  },
+  {
+    "protocol": "Terra 2.0",
+    "slug": "terra-2.0",
+    "date": "2024-07-31",
+    "loss_usd": 5000000000000,
+    "type": "IBC hooks exploit",
+    "chain": [
+      "Terra2"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "IBC hooks exploit"
+  },
+  {
+    "protocol": "Bungee",
+    "slug": "bungee",
+    "date": "2024-01-16",
+    "loss_usd": 3300000000000,
+    "type": "Missing Input Validation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Missing Input Validation"
+  },
+  {
+    "protocol": "Seneca",
+    "slug": "seneca",
+    "date": "2024-02-28",
+    "loss_usd": 6500000000000,
+    "type": "Token approval exploit",
+    "chain": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Token approval exploit"
+  },
+  {
+    "protocol": "Ola Finance",
+    "slug": "ola-finance",
+    "date": "2022-03-31",
+    "loss_usd": 4000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Fuse"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Hector Lending",
+    "slug": "hector-lending",
+    "date": "2023-06-02",
+    "loss_usd": 653000000000,
+    "type": "Unknown",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unknown"
+  },
+  {
+    "protocol": "numa.",
+    "slug": "numa.",
+    "date": "2025-08-10",
+    "loss_usd": 320000000000,
+    "type": "NumaVault Exploit",
+    "chain": [
+      "Sonic"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "NumaVault Exploit"
+  },
+  {
+    "protocol": "Sharwa.Finance",
+    "slug": "sharwa.finance",
+    "date": "2025-10-20",
+    "loss_usd": 146000000000,
+    "type": "Price Manipulation Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Manipulation Attack"
+  },
+  {
+    "protocol": "Meerkat Finance",
+    "slug": "meerkat-finance",
+    "date": "2021-03-04",
+    "loss_usd": 32000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "GeniusAI",
+    "slug": "geniusai",
+    "date": "2024-05-05",
+    "loss_usd": 1270000000000,
+    "type": "Private Key Compromised (Discord Hack)",
+    "chain": [
+      "Fantom",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Discord Hack)"
+  },
+  {
+    "protocol": "Fegex",
+    "slug": "fegex",
+    "date": "2024-12-29",
+    "loss_usd": 900000000000,
+    "type": "Missing Access Control",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Missing Access Control"
+  },
+  {
+    "protocol": "Merlin",
+    "slug": "merlin",
+    "date": "2021-06-29",
+    "loss_usd": 330000000000,
+    "type": "Incentive Rewards Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "Bondly",
+    "slug": "bondly",
+    "date": "2021-07-15",
+    "loss_usd": 5900000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Velocore V2",
+    "slug": "velocore-v2",
+    "date": "2024-06-02",
+    "loss_usd": 6800000000000,
+    "type": "Fee Overflow Exploit",
+    "chain": [
+      "Linea",
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Fee Overflow Exploit"
+  },
+  {
+    "protocol": "Dragoma",
+    "slug": "dragoma",
+    "date": "2022-08-08",
+    "loss_usd": 3500000000000,
+    "type": "Drain Vaults",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drain Vaults"
+  },
+  {
+    "protocol": "UXLINK",
+    "slug": "uxlink",
+    "date": "2025-09-22",
+    "loss_usd": 11300000000000,
+    "type": "Delegatecall Exploit",
+    "chain": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Delegatecall Exploit"
+  },
+  {
+    "protocol": "Orbit Bridge",
+    "slug": "orbit-bridge",
+    "date": "2023-12-31",
+    "loss_usd": 81700000000000,
+    "type": "Signature Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Signature Exploit"
+  },
+  {
+    "protocol": "Penpie",
+    "slug": "penpie",
+    "date": "2024-09-03",
+    "loss_usd": 27000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Nemo Yield Trading",
+    "slug": "nemo-yield-trading",
+    "date": "2025-09-08",
+    "loss_usd": 2400000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Sui"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "Alpha Finance",
+    "slug": "alpha-finance",
+    "date": "2021-02-13",
+    "loss_usd": 37500000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "Bitget",
+    "slug": "bitget",
+    "date": "2025-04-20",
+    "loss_usd": 100000000000000,
+    "type": "Market-Making Bot Exploit",
+    "chain": null,
+    "description": "",
+    "tx_hash": null,
+    "technique": "Market-Making Bot Exploit"
+  },
+  {
+    "protocol": "Yearn Finance",
+    "slug": "yearn-finance",
+    "date": "2025-12-16",
+    "loss_usd": 300000000000,
+    "type": "misconfigured Fulcrum sUSD strategy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "misconfigured Fulcrum sUSD strategy"
+  },
+  {
+    "protocol": "CoinsPaid",
+    "slug": "coinspaid",
+    "date": "2023-07-22",
+    "loss_usd": 37300000000000,
+    "type": "Social Engineering",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Social Engineering"
+  },
+  {
+    "protocol": "CrossCurve",
+    "slug": "crosscurve",
+    "date": "2026-02-01",
+    "loss_usd": 3000000000000,
+    "type": "Spoofed Cross-Chain Messages",
+    "chain": null,
+    "description": "",
+    "tx_hash": null,
+    "technique": "Spoofed Cross-Chain Messages"
+  },
+  {
+    "protocol": "Merlin",
+    "slug": "merlin",
+    "date": "2021-05-26",
+    "loss_usd": 550000000000,
+    "type": "Math Mistake Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Math Mistake Exploit"
+  },
+  {
+    "protocol": "CoinDCX",
+    "slug": "coindcx",
+    "date": "2025-07-19",
+    "loss_usd": 44200000000000,
+    "type": null,
+    "chain": null,
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Rain",
+    "slug": "rain",
+    "date": "2024-04-29",
+    "loss_usd": 14800000000000,
+    "type": null,
+    "chain": [
+      "Bitcoin",
+      "Ethereum",
+      "XRP",
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "US Government Crypto Wallet",
+    "slug": "us-government-crypto-wallet",
+    "date": "2024-10-24",
+    "loss_usd": 20000000000000,
+    "type": null,
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Rubic",
+    "slug": "rubic",
+    "date": "2022-12-25",
+    "loss_usd": 1410000000000,
+    "type": "Router Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Router Exploit"
+  },
+  {
+    "protocol": "SwissBorg",
+    "slug": "swissborg",
+    "date": "2025-09-09",
+    "loss_usd": 41500000000000,
+    "type": "Third-party API compromise",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Third-party API compromise"
+  },
+  {
+    "protocol": "Bitcoin Mission",
+    "slug": "bitcoin-mission",
+    "date": "2025-04-22",
+    "loss_usd": 1300000000000,
+    "type": "overPaper Function Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "overPaper Function Exploit"
+  },
+  {
+    "protocol": "OKX DEX",
+    "slug": "okx-dex",
+    "date": "2023-12-13",
+    "loss_usd": 2700000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "DEUS Finance",
+    "slug": "deus-finance",
+    "date": "2021-03-15",
+    "loss_usd": 3000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "YO Protocol",
+    "slug": "yo-protocol",
+    "date": "2026-01-13",
+    "loss_usd": 3730000000000,
+    "type": "Slippage Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Slippage Exploit"
+  },
+  {
+    "protocol": "SurgeBNB",
+    "slug": "surgebnb",
+    "date": "2021-08-17",
+    "loss_usd": 4000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Unilend V2",
+    "slug": "unilend-v2",
+    "date": "2025-01-12",
+    "loss_usd": 197600000000,
+    "type": "Redeem Process Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Redeem Process Exploit"
+  },
+  {
+    "protocol": "Cashio",
+    "slug": "cashio",
+    "date": "2022-03-23",
+    "loss_usd": 48000000000000,
+    "type": "Collateral Validation Exploit",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Collateral Validation Exploit"
+  },
+  {
+    "protocol": "The DAO",
+    "slug": "the-dao",
+    "date": "2016-06-17",
+    "loss_usd": 60000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Nirvana V1",
+    "slug": "nirvana-v1",
+    "date": "2022-07-28",
+    "loss_usd": 3500000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "BtcTurk",
+    "slug": "btcturk",
+    "date": "2024-06-22",
+    "loss_usd": 54000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Usual USD0",
+    "slug": "usual-usd0",
+    "date": "2025-05-27",
+    "loss_usd": 43000000000,
+    "type": "Arbitration Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Arbitration Exploit"
+  },
+  {
+    "protocol": "Paraluni Masterchef",
+    "slug": "paraluni-masterchef",
+    "date": "2022-03-13",
+    "loss_usd": 1700000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "CoinDash",
+    "slug": "coindash",
+    "date": "2017-07-18",
+    "loss_usd": 7700000000000,
+    "type": "Frontend Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Frontend Attack"
+  },
+  {
+    "protocol": "Cozy V2",
+    "slug": "cozy-v2",
+    "date": "2025-08-30",
+    "loss_usd": 427000000000,
+    "type": "Insufficient Sender Verification Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Insufficient Sender Verification Exploit"
+  },
+  {
+    "protocol": "zkLend",
+    "slug": "zklend",
+    "date": "2025-02-11",
+    "loss_usd": 9550000000000,
+    "type": "Empty Market Exploit",
+    "chain": [
+      "Starknet"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Empty Market Exploit"
+  },
+  {
+    "protocol": "Poly Network",
+    "slug": "poly-network",
+    "date": "2021-08-10",
+    "loss_usd": 611000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "XT Exchange",
+    "slug": "xt-exchange",
+    "date": "2024-11-28",
+    "loss_usd": 1700000000000,
+    "type": null,
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Rho Markets",
+    "slug": "rho-markets",
+    "date": "2024-07-19",
+    "loss_usd": 7600000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Scroll"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "GriffinAI",
+    "slug": "griffinai",
+    "date": "2025-09-24",
+    "loss_usd": 3000000000000,
+    "type": "False Peer Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "False Peer Exploit"
+  },
+  {
+    "protocol": "Turtle Dex",
+    "slug": "turtle-dex",
+    "date": "2021-03-20",
+    "loss_usd": 2500000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Gate",
+    "slug": "gate",
+    "date": "2018-04-21",
+    "loss_usd": 235000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Monoswap",
+    "slug": "monoswap",
+    "date": "2024-07-31",
+    "loss_usd": 1300000000000,
+    "type": "Private Key Compromised (Malware)",
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Malware)"
+  },
+  {
+    "protocol": "Multichain",
+    "slug": "multichain",
+    "date": "2023-07-07",
+    "loss_usd": 126000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Moonriver",
+      "BSC",
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Belt Finance",
+    "slug": "belt-finance",
+    "date": "2021-05-29",
+    "loss_usd": 6300000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Texture",
+    "slug": "texture",
+    "date": "2025-07-09",
+    "loss_usd": 2200000000000,
+    "type": null,
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Arbix Finance",
+    "slug": "arbix-finance",
+    "date": "2022-01-04",
+    "loss_usd": 10000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Bybit",
+    "slug": "bybit",
+    "date": "2025-02-21",
+    "loss_usd": 1400000000000000,
+    "type": "Safe Multisig wallet Phishing Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Safe Multisig wallet Phishing Exploit"
+  },
+  {
+    "protocol": "Save",
+    "slug": "save",
+    "date": "2022-11-02",
+    "loss_usd": 1260000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Amun",
+    "slug": "amun",
+    "date": "2022-12-26",
+    "loss_usd": 300000000000,
+    "type": "Controlled Rebalance Manipulation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Controlled Rebalance Manipulation"
+  },
+  {
+    "protocol": "GANA Payment",
+    "slug": "gana-payment",
+    "date": "2025-11-20",
+    "loss_usd": 3100000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Thorchain DEX",
+    "slug": "thorchain-dex",
+    "date": "2021-07-15",
+    "loss_usd": 5000000000000,
+    "type": "Over-ride Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Over-ride Logic Exploit"
+  },
+  {
+    "protocol": "Roll",
+    "slug": "roll",
+    "date": "2021-03-14",
+    "loss_usd": 5700000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Warp Protocol",
+    "slug": "warp-protocol",
+    "date": "2020-12-18",
+    "loss_usd": 7800000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "ThalaSwap",
+    "slug": "thalaswap",
+    "date": "2024-11-15",
+    "loss_usd": 25500000000000,
+    "type": "Drained Liquidity Pool",
+    "chain": [
+      "Aptos"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Liquidity Pool"
+  },
+  {
+    "protocol": "Raft",
+    "slug": "raft",
+    "date": "2023-11-10",
+    "loss_usd": 3300000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "FOOM Cash",
+    "slug": "foom-cash",
+    "date": "2026-03-02",
+    "loss_usd": 2260000000000,
+    "type": "Fake Proof Spam",
+    "chain": [
+      "Ethereum",
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Fake Proof Spam"
+  },
+  {
+    "protocol": "Kalax",
+    "slug": "kalax",
+    "date": "2024-10-14",
+    "loss_usd": 350000000000,
+    "type": "Drain Vaults",
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drain Vaults"
+  },
+  {
+    "protocol": "MSCST",
+    "slug": "mscst",
+    "date": "2025-12-28",
+    "loss_usd": 129900000000,
+    "type": "Atomic Sandwich Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Atomic Sandwich Attack"
+  },
+  {
+    "protocol": "EraLend",
+    "slug": "eralend",
+    "date": "2023-07-25",
+    "loss_usd": 3400000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Banana Gun",
+    "slug": "banana-gun",
+    "date": "2024-09-19",
+    "loss_usd": 3000000000000,
+    "type": "Front-end vulnerability",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Front-end vulnerability"
+  },
+  {
+    "protocol": "Acala Network",
+    "slug": "acala-network",
+    "date": "2021-08-13",
+    "loss_usd": 1600000000000,
+    "type": "Incentives Function Mistake",
+    "chain": [
+      "Acala"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Incentives Function Mistake"
+  },
+  {
+    "protocol": "Mobius Token",
+    "slug": "mobius-token",
+    "date": "2025-05-11",
+    "loss_usd": 2160000000000,
+    "type": "Decimal Miscalculation Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Decimal Miscalculation Exploit"
+  },
+  {
+    "protocol": "DODO AMM",
+    "slug": "dodo-amm",
+    "date": "2021-03-09",
+    "loss_usd": 2000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "BonqDAO",
+    "slug": "bonqdao",
+    "date": "2023-02-01",
+    "loss_usd": 1700000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Beanstalk",
+    "slug": "beanstalk",
+    "date": "2022-04-17",
+    "loss_usd": 181000000000000,
+    "type": "Flashloan Governance Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Governance Attack"
+  },
+  {
+    "protocol": "Pickle",
+    "slug": "pickle",
+    "date": "2020-11-22",
+    "loss_usd": 19700000000000,
+    "type": "Vault Swap Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Vault Swap Exploit"
+  },
+  {
+    "protocol": "Minterest",
+    "slug": "minterest",
+    "date": "2024-07-15",
+    "loss_usd": 1400000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Mantle"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "dForce Lending",
+    "slug": "dforce-lending",
+    "date": "2023-02-10",
+    "loss_usd": 3650000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Arbitrum",
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "pNetwork",
+    "slug": "pnetwork",
+    "date": "2022-11-03",
+    "loss_usd": 4589449000000,
+    "type": "Misconfiguration",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Misconfiguration"
+  },
+  {
+    "protocol": "Makina",
+    "slug": "makina",
+    "date": "2026-01-19",
+    "loss_usd": 4200000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Loopring",
+    "slug": "loopring",
+    "date": "2024-06-09",
+    "loss_usd": 5000000000000,
+    "type": "Guardian 2FA service exploit",
+    "chain": [
+      "Loopring"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Guardian 2FA service exploit"
+  },
+  {
+    "protocol": "Seedify",
+    "slug": "seedify",
+    "date": "2025-09-23",
+    "loss_usd": 1000000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "BSC",
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Saga",
+    "slug": "saga",
+    "date": "2026-01-21",
+    "loss_usd": 7000000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Saga"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Dego Finance",
+    "slug": "dego-finance",
+    "date": "2022-02-10",
+    "loss_usd": 10000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Cronos"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Bunni V2",
+    "slug": "bunni-v2",
+    "date": "2025-09-02",
+    "loss_usd": 8400000000000,
+    "type": "Liquidity Distribution Function Exploit",
+    "chain": [
+      "Ethereum",
+      "Unichain"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Liquidity Distribution Function Exploit"
+  },
+  {
+    "protocol": "Blur Finance",
+    "slug": "blur-finance",
+    "date": "2022-08-10",
+    "loss_usd": 600000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "BSC",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Team Finance",
+    "slug": "team-finance",
+    "date": "2022-10-27",
+    "loss_usd": 15800000000000,
+    "type": "Migrate Function Mistake Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Migrate Function Mistake Exploit"
+  },
+  {
+    "protocol": "Eminence",
+    "slug": "eminence",
+    "date": "2020-09-28",
+    "loss_usd": 15000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Pike V1",
+    "slug": "pike-v1",
+    "date": "2024-04-30",
+    "loss_usd": 1600000000000,
+    "type": "Storage Misalignment Exploit",
+    "chain": [
+      "Ethereum",
+      "Optimism",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Storage Misalignment Exploit"
+  },
+  {
+    "protocol": "MoonHacker",
+    "slug": "moonhacker",
+    "date": "2025-01-02",
+    "loss_usd": 300000000000,
+    "type": "Unchecked FlashLoan Approve Exploit",
+    "chain": [
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unchecked FlashLoan Approve Exploit"
+  },
+  {
+    "protocol": "Balancer V2",
+    "slug": "balancer-v2",
+    "date": "2023-08-27",
+    "loss_usd": 800000000000,
+    "type": null,
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "DeltaPrime",
+    "slug": "deltaprime",
+    "date": "2024-09-16",
+    "loss_usd": 5980000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Nexera",
+    "slug": "nexera",
+    "date": "2024-08-07",
+    "loss_usd": 1800000000000,
+    "type": "Ownership Override Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Ownership Override Attack"
+  },
+  {
+    "protocol": "Infini",
+    "slug": "infini",
+    "date": "2025-02-24",
+    "loss_usd": 49500000000000,
+    "type": "Dev Privilege Oversight Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Dev Privilege Oversight Exploit"
+  },
+  {
+    "protocol": "Blend Pools V2",
+    "slug": "blend-pools-v2",
+    "date": "2026-02-22",
+    "loss_usd": 10970000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Stellar"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "MM Finance Cronos",
+    "slug": "mm-finance-cronos",
+    "date": "2022-05-04",
+    "loss_usd": 2000000000000,
+    "type": "DNS Spoofing",
+    "chain": [
+      "Cronos"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "DNS Spoofing"
+  },
+  {
+    "protocol": "Revest Finance",
+    "slug": "revest-finance",
+    "date": "2022-03-27",
+    "loss_usd": 2010000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Tropykus RSK",
+    "slug": "tropykus-rsk",
+    "date": "2023-06-14",
+    "loss_usd": 150000000000,
+    "type": "Redeem Rounding Error Exploit",
+    "chain": [
+      "Rootstock"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Redeem Rounding Error Exploit"
+  },
+  {
+    "protocol": "Arena SocialFi",
+    "slug": "arena-socialfi",
+    "date": "2023-10-07",
+    "loss_usd": 2900000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Phemex",
+    "slug": "phemex",
+    "date": "2025-01-23",
+    "loss_usd": 85000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Solana",
+      "XRP",
+      "Bitcoin",
+      "BSC",
+      "Sui",
+      "Base",
+      "Tron",
+      "Arbitrum",
+      "Avalanche",
+      "Polygon",
+      "Optimism",
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "BlueBerry",
+    "slug": "blueberry",
+    "date": "2024-02-24",
+    "loss_usd": 1400000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Polycule",
+    "slug": "polycule",
+    "date": "2026-01-07",
+    "loss_usd": 230000000000,
+    "type": null,
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Crema Finance",
+    "slug": "crema-finance",
+    "date": "2022-07-02",
+    "loss_usd": 8800000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "AzukiDAO",
+    "slug": "azukidao",
+    "date": "2023-07-03",
+    "loss_usd": 68000000000,
+    "type": "Replay Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Replay Attack"
+  },
+  {
+    "protocol": "Tenderize V2",
+    "slug": "tenderize-v2",
+    "date": "2025-04-07",
+    "loss_usd": 10850000000,
+    "type": "Proxy Upgrade Skim",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Proxy Upgrade Skim"
+  },
+  {
+    "protocol": "Moonwell Lending",
+    "slug": "moonwell-lending",
+    "date": "2026-02-15",
+    "loss_usd": 1780000000000,
+    "type": "cbETH Collateral Exploit",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "cbETH Collateral Exploit"
+  },
+  {
+    "protocol": "Pando Rings",
+    "slug": "pando-rings",
+    "date": "2022-11-06",
+    "loss_usd": 22000000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Mixin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "DEUS Finance",
+    "slug": "deus-finance",
+    "date": "2023-05-05",
+    "loss_usd": 6500000000000,
+    "type": "Burn Function Mistake",
+    "chain": [
+      "Arbitrum",
+      "BSC",
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Burn Function Mistake"
+  },
+  {
+    "protocol": "Mixin Network",
+    "slug": "mixin-network",
+    "date": "2023-09-23",
+    "loss_usd": 200000000000000,
+    "type": "Database Attack",
+    "chain": [
+      "Mixin"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Database Attack"
+  },
+  {
+    "protocol": "Fantasm Finance",
+    "slug": "fantasm-finance",
+    "date": "2022-03-09",
+    "loss_usd": 2260000000000,
+    "type": "Missing Condition Check",
+    "chain": [
+      "Fantom"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Missing Condition Check"
+  },
+  {
+    "protocol": "LeetSwap",
+    "slug": "leetswap",
+    "date": "2023-08-01",
+    "loss_usd": 620000000000,
+    "type": "Liquidity Pools Compromised",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Liquidity Pools Compromised"
+  },
+  {
+    "protocol": "Astera.fi",
+    "slug": "astera.fi",
+    "date": "2025-10-09",
+    "loss_usd": 573000000000,
+    "type": "Oracle Price Feed Manipulation",
+    "chain": [
+      "Linea"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Oracle Price Feed Manipulation"
+  },
+  {
+    "protocol": "Hegic(old contract)",
+    "slug": "hegic(old-contract)",
+    "date": "2025-03-01",
+    "loss_usd": 94000000000,
+    "type": "Unlimited repeated withdrawal exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unlimited repeated withdrawal exploit"
+  },
+  {
+    "protocol": "Hyperliquid",
+    "slug": "hyperliquid",
+    "date": "2023-06-15",
+    "loss_usd": 37000000000,
+    "type": "CEX Price Manipulation Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "CEX Price Manipulation Attack"
+  },
+  {
+    "protocol": "Moby",
+    "slug": "moby",
+    "date": "2025-01-08",
+    "loss_usd": 1470000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "1inch",
+    "slug": "1inch",
+    "date": "2025-03-07",
+    "loss_usd": 5000000000000,
+    "type": "Calldata underflow and resolver hijack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Calldata underflow and resolver hijack"
+  },
+  {
+    "protocol": "Eleven Finance",
+    "slug": "eleven-finance",
+    "date": "2021-06-22",
+    "loss_usd": 4500000000000,
+    "type": "Flashloan Burn Function Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Burn Function Exploit"
+  },
+  {
+    "protocol": "CheeseBank",
+    "slug": "cheesebank",
+    "date": "2020-11-16",
+    "loss_usd": 3300000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Vulcan Forged",
+    "slug": "vulcan-forged",
+    "date": "2021-12-13",
+    "loss_usd": 140000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Slope Wallet",
+    "slug": "slope-wallet",
+    "date": "2022-08-02",
+    "loss_usd": 5300000000000,
+    "type": "Private Key Compromised (Stored Publicly)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Stored Publicly)"
+  },
+  {
+    "protocol": "Rari Capital",
+    "slug": "rari-capital",
+    "date": "2022-05-01",
+    "loss_usd": 80000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum",
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "ALEX",
+    "slug": "alex",
+    "date": "2024-05-16",
+    "loss_usd": 4300000000000,
+    "type": "Private Key Compromised (Phishing)",
+    "chain": [
+      "Stacks"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Phishing)"
+  },
+  {
+    "protocol": "Onyx V2",
+    "slug": "onyx-v2",
+    "date": "2024-09-26",
+    "loss_usd": 4000000000000,
+    "type": "Liquidation Logic Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Liquidation Logic Exploit"
+  },
+  {
+    "protocol": "UwU Lend",
+    "slug": "uwu-lend",
+    "date": "2024-06-13",
+    "loss_usd": 3700000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Spartan",
+    "slug": "spartan",
+    "date": "2021-05-02",
+    "loss_usd": 30500000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "Huobi",
+    "slug": "huobi",
+    "date": "2023-11-22",
+    "loss_usd": 26400000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "402bridge",
+    "slug": "402bridge",
+    "date": "2025-10-27",
+    "loss_usd": 17000000000,
+    "type": "Private Key Compromised (Stored Publicly)",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Stored Publicly)"
+  },
+  {
+    "protocol": "Poly Network",
+    "slug": "poly-network",
+    "date": "2023-07-02",
+    "loss_usd": 5000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC",
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Mirror",
+    "slug": "mirror",
+    "date": "2021-10-08",
+    "loss_usd": 90000000000000,
+    "type": "Duplicate Call Exploit",
+    "chain": [
+      "Terra"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Duplicate Call Exploit"
+  },
+  {
+    "protocol": "Merlin",
+    "slug": "merlin",
+    "date": "2021-05-26",
+    "loss_usd": 680000000000,
+    "type": "Flashloan Incentive Rewards Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Incentive Rewards Exploit"
+  },
+  {
+    "protocol": "8ightDAO",
+    "slug": "8ightdao",
+    "date": "2021-12-08",
+    "loss_usd": 1750000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Harmony"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Aperture LM",
+    "slug": "aperture-lm",
+    "date": "2026-01-25",
+    "loss_usd": 3200000000000,
+    "type": null,
+    "chain": [
+      "Ethereum",
+      "Base",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Rari Capital",
+    "slug": "rari-capital",
+    "date": "2025-12-18",
+    "loss_usd": 2000000000000,
+    "type": "Uninitialized Proxy Hijack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Uninitialized Proxy Hijack"
+  },
+  {
+    "protocol": "0vix",
+    "slug": "0vix",
+    "date": "2023-04-28",
+    "loss_usd": 2000000000000,
+    "type": "Flashloan Donate Function Logic Exploit",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Donate Function Logic Exploit"
+  },
+  {
+    "protocol": "SUNRAY\u00b7FINANCE",
+    "slug": "sunray\u00b7finance",
+    "date": "2024-10-30",
+    "loss_usd": 2855000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Levana Perps",
+    "slug": "levana-perps",
+    "date": "2023-12-27",
+    "loss_usd": 1100000000000,
+    "type": "Price Oracle Attack",
+    "chain": [
+      "Osmosis"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Attack"
+  },
+  {
+    "protocol": "Impermax V3",
+    "slug": "impermax-v3",
+    "date": "2025-04-26",
+    "loss_usd": 300000000000,
+    "type": "Flashloan Exploit",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Exploit"
+  },
+  {
+    "protocol": "Astrid Finance",
+    "slug": "astrid-finance",
+    "date": "2023-10-29",
+    "loss_usd": 228000000000,
+    "type": "Withdraw Function Argument Manipulation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Withdraw Function Argument Manipulation"
+  },
+  {
+    "protocol": "SIR",
+    "slug": "sir",
+    "date": "2025-03-30",
+    "loss_usd": 355000000000,
+    "type": "Transient storage collision",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Transient storage collision"
+  },
+  {
+    "protocol": "Lava",
+    "slug": "lava",
+    "date": "2024-03-29",
+    "loss_usd": 340000000000,
+    "type": "Calculation Error in Liquidation Engine ",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Calculation Error in Liquidation Engine "
+  },
+  {
+    "protocol": "Inverse Finance Frontier",
+    "slug": "inverse-finance-frontier",
+    "date": "2022-06-16",
+    "loss_usd": 5800000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Balancer V2",
+    "slug": "balancer-v2",
+    "date": "2023-09-19",
+    "loss_usd": 238000000000,
+    "type": "Frontend Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Frontend Attack"
+  },
+  {
+    "protocol": "SushiSwap",
+    "slug": "sushiswap",
+    "date": "2023-04-10",
+    "loss_usd": 3300000000000,
+    "type": "Missing Input Validation",
+    "chain": [
+      "Ethereum",
+      "Arbitrum",
+      "Optimism",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Missing Input Validation"
+  },
+  {
+    "protocol": "Gamma",
+    "slug": "gamma",
+    "date": "2021-12-21",
+    "loss_usd": 8200000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Bunny",
+    "slug": "bunny",
+    "date": "2021-05-19",
+    "loss_usd": 45000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "RiskOnBlast",
+    "slug": "riskonblast",
+    "date": "2024-02-25",
+    "loss_usd": 1300000000000,
+    "type": null,
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Jimbos Protocol",
+    "slug": "jimbos-protocol",
+    "date": "2023-05-28",
+    "loss_usd": 7500000000000,
+    "type": "Flashloan Slippage Attack",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Slippage Attack"
+  },
+  {
+    "protocol": "ValueDefi",
+    "slug": "valuedefi",
+    "date": "2021-05-05",
+    "loss_usd": 10000000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Bent Finance",
+    "slug": "bent-finance",
+    "date": "2021-12-21",
+    "loss_usd": 1750000000000,
+    "type": "User Balances Manually Updated",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "User Balances Manually Updated"
+  },
+  {
+    "protocol": "LND",
+    "slug": "lnd",
+    "date": "2025-05-09",
+    "loss_usd": 1300000000000,
+    "type": null,
+    "chain": [
+      "Sonic",
+      "Hyperliquid L1"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": null
+  },
+  {
+    "protocol": "Platypus Finance",
+    "slug": "platypus-finance",
+    "date": "2023-02-16",
+    "loss_usd": 8500000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "RocketSwap Base",
+    "slug": "rocketswap-base",
+    "date": "2023-08-15",
+    "loss_usd": 865000000000,
+    "type": "Private Key Compromised (Brute Force)",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Brute Force)"
+  },
+  {
+    "protocol": "Zoth ZeUSD",
+    "slug": "zoth-zeusd",
+    "date": "2025-03-21",
+    "loss_usd": 8850000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Resolv",
+    "slug": "resolv",
+    "date": "2026-03-21",
+    "loss_usd": 24500000000000,
+    "type": "Private Key Compromised",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Flow",
+    "slug": "flow",
+    "date": "2025-12-27",
+    "loss_usd": 3900000000000,
+    "type": "mint-and-dump Hack",
+    "chain": [
+      "Flow"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "mint-and-dump Hack"
+  },
+  {
+    "protocol": "Levyathan",
+    "slug": "levyathan",
+    "date": "2021-07-30",
+    "loss_usd": 1500000000000,
+    "type": "Private Key Compromised (Stored Publicly)",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Stored Publicly)"
+  },
+  {
+    "protocol": "Cetus CLMM",
+    "slug": "cetus-clmm",
+    "date": "2025-05-22",
+    "loss_usd": 223000000000000,
+    "type": "Spoof Token Exploit",
+    "chain": [
+      "Sui"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Spoof Token Exploit"
+  },
+  {
+    "protocol": "Uranium Finance",
+    "slug": "uranium-finance",
+    "date": "2021-04-28",
+    "loss_usd": 57200000000000,
+    "type": "Math Mistake Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Math Mistake Exploit"
+  },
+  {
+    "protocol": "Cypher",
+    "slug": "cypher",
+    "date": "2023-08-07",
+    "loss_usd": 1035000000000,
+    "type": "Unknown",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Unknown"
+  },
+  {
+    "protocol": "WOO X",
+    "slug": "woo-x",
+    "date": "2025-07-24",
+    "loss_usd": 14000000000000,
+    "type": "Social Engineering",
+    "chain": [
+      "Bitcoin",
+      "Ethereum",
+      "Arbitrum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Social Engineering"
+  },
+  {
+    "protocol": "ChainSwap",
+    "slug": "chainswap",
+    "date": "2021-11-07",
+    "loss_usd": 4400000000000,
+    "type": "Exploit Weak Authentication Check",
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Exploit Weak Authentication Check"
+  },
+  {
+    "protocol": "1inch",
+    "slug": "1inch",
+    "date": "2024-10-31",
+    "loss_usd": 720000000000,
+    "type": "Private Key Compromised (Supply Chain Attack)",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Supply Chain Attack)"
+  },
+  {
+    "protocol": "Dolomite",
+    "slug": "dolomite",
+    "date": "2024-03-20",
+    "loss_usd": 1800000000000,
+    "type": "Acces Control Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Acces Control Exploit"
+  },
+  {
+    "protocol": "CoinStats",
+    "slug": "coinstats",
+    "date": "2024-07-12",
+    "loss_usd": 2200000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "DogWifTools",
+    "slug": "dogwiftools",
+    "date": "2025-01-28",
+    "loss_usd": 10000000000000,
+    "type": "Private Key Compromised (Malware)",
+    "chain": [
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Malware)"
+  },
+  {
+    "protocol": "Harmony Bridge",
+    "slug": "harmony-bridge",
+    "date": "2022-06-23",
+    "loss_usd": 100000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "BTC24H",
+    "slug": "btc24h",
+    "date": "2024-12-16",
+    "loss_usd": 85700000000,
+    "type": "Acces Control Exploit",
+    "chain": [
+      "Polygon"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Acces Control Exploit"
+  },
+  {
+    "protocol": "Vee Finance",
+    "slug": "vee-finance",
+    "date": "2021-09-21",
+    "loss_usd": 34000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Uwerx",
+    "slug": "uwerx",
+    "date": "2023-08-02",
+    "loss_usd": 327000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "WazirX: India",
+    "slug": "wazirx:-india",
+    "date": "2024-07-18",
+    "loss_usd": 234900000000000,
+    "type": "Safe Multisig wallet Phishing Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Safe Multisig wallet Phishing Exploit"
+  },
+  {
+    "protocol": "GDAC",
+    "slug": "gdac",
+    "date": "2023-04-08",
+    "loss_usd": 13900000000000,
+    "type": "Hot wallet hack",
+    "chain": [],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Hot wallet hack"
+  },
+  {
+    "protocol": "YOLO Games",
+    "slug": "yolo-games",
+    "date": "2024-06-11",
+    "loss_usd": 1500000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Blast"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Snowdog",
+    "slug": "snowdog",
+    "date": "2021-11-25",
+    "loss_usd": 18100000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Swaprum",
+    "slug": "swaprum",
+    "date": "2023-05-19",
+    "loss_usd": 3000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Hacken Token",
+    "slug": "hacken-token",
+    "date": "2025-06-20",
+    "loss_usd": 250000000000,
+    "type": "Private Key Compromised",
+    "chain": null,
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised"
+  },
+  {
+    "protocol": "Gym Network",
+    "slug": "gym-network",
+    "date": "2022-06-08",
+    "loss_usd": 2100000000000,
+    "type": "Deposit Function Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Deposit Function Exploit"
+  },
+  {
+    "protocol": "UwU Lend",
+    "slug": "uwu-lend",
+    "date": "2024-06-10",
+    "loss_usd": 20000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Platypus Finance",
+    "slug": "platypus-finance",
+    "date": "2023-10-13",
+    "loss_usd": 2200000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Avalanche"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Maestro",
+    "slug": "maestro",
+    "date": "2023-10-23",
+    "loss_usd": 465000000000,
+    "type": "Arbitrary External Call",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Arbitrary External Call"
+  },
+  {
+    "protocol": "US Permissionless Dollar",
+    "slug": "us-permissionless-dollar",
+    "date": "2025-12-04",
+    "loss_usd": 1000000000000,
+    "type": "\"CPIMP\" proxy front-run",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "\"CPIMP\" proxy front-run"
+  },
+  {
+    "protocol": "Indodax",
+    "slug": "indodax",
+    "date": "2024-09-10",
+    "loss_usd": 25200000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum",
+      "Polygon",
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Akropolis",
+    "slug": "akropolis",
+    "date": "2020-11-12",
+    "loss_usd": 2000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Origin Protocol",
+    "slug": "origin-protocol",
+    "date": "2020-11-17",
+    "loss_usd": 8000000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "DFX V2",
+    "slug": "dfx-v2",
+    "date": "2022-11-10",
+    "loss_usd": 4000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "MERLIN DEX",
+    "slug": "merlin-dex",
+    "date": "2023-04-25",
+    "loss_usd": 1820000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "zkSync Era"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Transit Swap",
+    "slug": "transit-swap",
+    "date": "2022-10-02",
+    "loss_usd": 21000000000000,
+    "type": "Transfer Logic Exploit",
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Transfer Logic Exploit"
+  },
+  {
+    "protocol": "WXETA",
+    "slug": "wxeta",
+    "date": "2024-09-16",
+    "loss_usd": 110000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "Ethereum",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Palmswap",
+    "slug": "palmswap",
+    "date": "2023-07-24",
+    "loss_usd": 900000000000,
+    "type": "Inflationary Accounting Manipulation",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Inflationary Accounting Manipulation"
+  },
+  {
+    "protocol": "HTX",
+    "slug": "htx",
+    "date": "2023-09-25",
+    "loss_usd": 8000000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Radiant V2",
+    "slug": "radiant-v2",
+    "date": "2024-01-02",
+    "loss_usd": 4500000000000,
+    "type": "Flashloan New Market Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan New Market Exploit"
+  },
+  {
+    "protocol": "Arcadia V1",
+    "slug": "arcadia-v1",
+    "date": "2023-07-10",
+    "loss_usd": 460000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "Ethereum",
+      "Optimism"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "ALEX",
+    "slug": "alex",
+    "date": "2025-06-06",
+    "loss_usd": 8373000000000,
+    "type": "malicious transfer() method",
+    "chain": [
+      "Stacks"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "malicious transfer() method"
+  },
+  {
+    "protocol": "GMX V1 Perps",
+    "slug": "gmx-v1-perps",
+    "date": "2025-07-09",
+    "loss_usd": 42000000000000,
+    "type": "Re-entrancy Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Re-entrancy Exploit"
+  },
+  {
+    "protocol": "GemPad",
+    "slug": "gempad",
+    "date": "2024-12-17",
+    "loss_usd": 2000000000000,
+    "type": "Reentrancy",
+    "chain": [
+      "Ethereum",
+      "Base",
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Reentrancy"
+  },
+  {
+    "protocol": "Compounder Finance",
+    "slug": "compounder-finance",
+    "date": "2020-12-02",
+    "loss_usd": 12000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Yearn Finance",
+    "slug": "yearn-finance",
+    "date": "2023-04-13",
+    "loss_usd": 11539000000000,
+    "type": "Flashloan Misconfiguration Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Misconfiguration Exploit"
+  },
+  {
+    "protocol": "LCX",
+    "slug": "lcx",
+    "date": "2022-01-08",
+    "loss_usd": 7940000000000,
+    "type": "Private Key Compromised (Unknown Method)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Unknown Method)"
+  },
+  {
+    "protocol": "Silo Finance",
+    "slug": "silo-finance",
+    "date": "2025-06-25",
+    "loss_usd": 546000000000,
+    "type": "fillQuote silo.borrow() Exploit",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "fillQuote silo.borrow() Exploit"
+  },
+  {
+    "protocol": "Curve DEX",
+    "slug": "curve-dex",
+    "date": "2022-08-09",
+    "loss_usd": 575000000000,
+    "type": "DNS Spoofing",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "DNS Spoofing"
+  },
+  {
+    "protocol": "Veil Cash",
+    "slug": "veil-cash",
+    "date": "2026-02-21",
+    "loss_usd": 5000000000,
+    "type": "misconfigured Groth16 verifier",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "misconfigured Groth16 verifier"
+  },
+  {
+    "protocol": "Conic Finance",
+    "slug": "conic-finance",
+    "date": "2023-07-22",
+    "loss_usd": 300000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "CREAM Lending",
+    "slug": "cream-lending",
+    "date": "2021-10-27",
+    "loss_usd": 130000000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "AnubisDAO",
+    "slug": "anubisdao",
+    "date": "2021-10-29",
+    "loss_usd": 60000000000000,
+    "type": "Drained Contracts",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Drained Contracts"
+  },
+  {
+    "protocol": "Arcadia V2",
+    "slug": "arcadia-v2",
+    "date": "2025-07-15",
+    "loss_usd": 2500000000000,
+    "type": "Rebalancer contract reentrancy hack",
+    "chain": [
+      "Base"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Rebalancer contract reentrancy hack"
+  },
+  {
+    "protocol": "Sovryn",
+    "slug": "sovryn",
+    "date": "2022-10-04",
+    "loss_usd": 1100000000000,
+    "type": "Flashloan Reentrancy Attack",
+    "chain": [
+      "RSK"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Reentrancy Attack"
+  },
+  {
+    "protocol": "Wintermute",
+    "slug": "wintermute",
+    "date": "2022-09-20",
+    "loss_usd": 160000000000000,
+    "type": "Private Key Compromised (Brute Force)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Brute Force)"
+  },
+  {
+    "protocol": "Zircon Gamma",
+    "slug": "zircon-gamma",
+    "date": "2023-03-18",
+    "loss_usd": 350000000000,
+    "type": "Flashloan Pool Shares Exploit",
+    "chain": [
+      "BSC",
+      "Moonriver"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Pool Shares Exploit"
+  },
+  {
+    "protocol": "Keep3r Network",
+    "slug": "keep3r-network",
+    "date": "2023-06-12",
+    "loss_usd": 200000000000,
+    "type": "Private Key Compromised (Vanity Address)",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Vanity Address)"
+  },
+  {
+    "protocol": "Resupply",
+    "slug": "resupply",
+    "date": "2025-06-25",
+    "loss_usd": 9600000000000,
+    "type": "Price Oracle Manipulation",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Price Oracle Manipulation"
+  },
+  {
+    "protocol": "Ooki",
+    "slug": "ooki",
+    "date": "2020-02-18",
+    "loss_usd": 650000000000,
+    "type": "Flashloan Price Oracle Attack",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Flashloan Price Oracle Attack"
+  },
+  {
+    "protocol": "Concentric",
+    "slug": "concentric",
+    "date": "2024-01-22",
+    "loss_usd": 1720000000000,
+    "type": "Private Key Compromised (Social Engineering)",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Social Engineering)"
+  },
+  {
+    "protocol": "ArbiSwap",
+    "slug": "arbiswap",
+    "date": "2023-03-02",
+    "loss_usd": 100000000000,
+    "type": "Infinite Mint and Dump",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Infinite Mint and Dump"
+  },
+  {
+    "protocol": "Yield Protocol",
+    "slug": "yield-protocol",
+    "date": "2024-04-30",
+    "loss_usd": 181000000000,
+    "type": "Balance Disparity Exploit",
+    "chain": [
+      "Arbitrum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Balance Disparity Exploit"
+  },
+  {
+    "protocol": "Audius",
+    "slug": "audius",
+    "date": "2022-07-25",
+    "loss_usd": 6000000000000,
+    "type": "Malicious Governance Proposal",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Malicious Governance Proposal"
+  },
+  {
+    "protocol": "LaunchZone",
+    "slug": "launchzone",
+    "date": "2023-02-27",
+    "loss_usd": 700000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Ara Finance",
+    "slug": "ara-finance",
+    "date": "2023-06-19",
+    "loss_usd": 131000000000,
+    "type": "Access Control Exploit",
+    "chain": [
+      "BSC"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Access Control Exploit"
+  },
+  {
+    "protocol": "Trust Wallet",
+    "slug": "trust-wallet",
+    "date": "2025-12-25",
+    "loss_usd": 7000000000000,
+    "type": "Private Key Compromised (Supply Chain Attack)",
+    "chain": [
+      "Ethereum",
+      "Bitcoin",
+      "Solana"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Private Key Compromised (Supply Chain Attack)"
+  },
+  {
+    "protocol": "TempleDAO",
+    "slug": "templedao",
+    "date": "2022-10-11",
+    "loss_usd": 2300000000000,
+    "type": "Exploit Lack of Input Authentication",
+    "chain": [
+      "Ethereum"
+    ],
+    "description": "",
+    "tx_hash": null,
+    "technique": "Exploit Lack of Input Authentication"
+  }
+]

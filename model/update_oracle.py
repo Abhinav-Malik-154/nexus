@@ -44,8 +44,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger("nexus-oracle")
 
-# Path to GNN predictions
-PREDICTIONS_PATH = Path(__file__).parent / "data" / "gnn_predictions.json"
+# Path to GNN predictions (in project root /data folder)
+PREDICTIONS_PATH = Path(__file__).parent.parent / "data" / "gnn_predictions.json"
 
 # Update interval for watch mode (seconds)
 UPDATE_INTERVAL = 15 * 60  # 15 minutes

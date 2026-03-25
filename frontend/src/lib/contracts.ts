@@ -11,8 +11,8 @@
 
 export const CONTRACTS = {
   // Update these after deployment
-  NEXUS_ORACLE: '0x0000000000000000000000000000000000000000' as `0x${string}`,
-  PROTECTION_VAULT: '0x0000000000000000000000000000000000000000' as `0x${string}`,
+  NEXUS_ORACLE: '0xC0b6B479A264e0d900f6AE7c461668905a40AAb0' as `0x${string}`,
+  PROTECTION_VAULT: '0x30F9dd5aFAbA8a3270c3351AD9aabca6CED391F3' as `0x${string}`,
 } as const
 
 // ═══════════════════════════════════════════════════════════════════════════

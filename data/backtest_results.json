@@ -1,0 +1,253 @@
+{
+  "metrics": {
+    "total_exploits": 21,
+    "known_protocols": 6,
+    "exploits_flagged": 0,
+    "detection_rate": 0.0,
+    "loss_coverage": 0.0,
+    "avg_risk_score": 23.0,
+    "by_type": {
+      "private_key_compromise": {
+        "total": 1,
+        "flagged": 0
+      },
+      "smart_contract_exploit": {
+        "total": 3,
+        "flagged": 0
+      },
+      "hot_wallet_compromise": {
+        "total": 1,
+        "flagged": 0
+      },
+      "wallet_exploit": {
+        "total": 1,
+        "flagged": 0
+      },
+      "flash_loan_attack": {
+        "total": 2,
+        "flagged": 0
+      },
+      "oracle_manipulation": {
+        "total": 2,
+        "flagged": 0
+      },
+      "fraud_insolvency": {
+        "total": 1,
+        "flagged": 0
+      },
+      "bridge_exploit": {
+        "total": 6,
+        "flagged": 0
+      },
+      "insolvency": {
+        "total": 1,
+        "flagged": 0
+      },
+      "algorithmic_stablecoin_death_spiral": {
+        "total": 1,
+        "flagged": 0
+      },
+      "governance_attack": {
+        "total": 1,
+        "flagged": 0
+      },
+      "frontend_attack": {
+        "total": 1,
+        "flagged": 0
+      }
+    },
+    "contagion_detection": 0.0
+  },
+  "results": [
+    {
+      "protocol": "PlayDapp",
+      "slug": "playdapp",
+      "date": "2024-02-09",
+      "loss_usd": 290000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "private_key_compromise"
+    },
+    {
+      "protocol": "KyberSwap",
+      "slug": "kyberswap",
+      "date": "2023-11-22",
+      "loss_usd": 54700000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "smart_contract_exploit"
+    },
+    {
+      "protocol": "CoinEx",
+      "slug": "coinex",
+      "date": "2023-09-12",
+      "loss_usd": 70000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "hot_wallet_compromise"
+    },
+    {
+      "protocol": "Curve Finance",
+      "slug": "curve-dex",
+      "date": "2023-07-30",
+      "loss_usd": 62000000,
+      "risk_score": 14.14455771446228,
+      "flagged": false,
+      "exploit_type": "smart_contract_exploit"
+    },
+    {
+      "protocol": "Atomic Wallet",
+      "slug": "atomic-wallet",
+      "date": "2023-06-03",
+      "loss_usd": 100000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "wallet_exploit"
+    },
+    {
+      "protocol": "Euler Finance",
+      "slug": "euler",
+      "date": "2023-03-13",
+      "loss_usd": 197000000,
+      "risk_score": 25.708293914794922,
+      "flagged": false,
+      "exploit_type": "flash_loan_attack"
+    },
+    {
+      "protocol": "BonqDAO",
+      "slug": "bonqdao",
+      "date": "2023-02-03",
+      "loss_usd": 120000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "oracle_manipulation"
+    },
+    {
+      "protocol": "FTX",
+      "slug": "ftx",
+      "date": "2022-11-11",
+      "loss_usd": 8000000000,
+      "risk_score": 24.55568164587021,
+      "flagged": false,
+      "exploit_type": "fraud_insolvency"
+    },
+    {
+      "protocol": "Mango Markets",
+      "slug": "mango-markets",
+      "date": "2022-10-11",
+      "loss_usd": 114000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "oracle_manipulation"
+    },
+    {
+      "protocol": "BNB Bridge",
+      "slug": "bnb-bridge",
+      "date": "2022-10-06",
+      "loss_usd": 586000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    },
+    {
+      "protocol": "Nomad Bridge",
+      "slug": "nomad-bridge",
+      "date": "2022-08-01",
+      "loss_usd": 190000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    },
+    {
+      "protocol": "Harmony Horizon",
+      "slug": "harmony-bridge",
+      "date": "2022-06-24",
+      "loss_usd": 100000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    },
+    {
+      "protocol": "Celsius",
+      "slug": "celsius",
+      "date": "2022-06-13",
+      "loss_usd": 4700000000,
+      "risk_score": 24.555687606334686,
+      "flagged": false,
+      "exploit_type": "insolvency"
+    },
+    {
+      "protocol": "Terra Luna",
+      "slug": "terra",
+      "date": "2022-05-09",
+      "loss_usd": 40000000000,
+      "risk_score": 24.555687606334686,
+      "flagged": false,
+      "exploit_type": "algorithmic_stablecoin_death_spiral"
+    },
+    {
+      "protocol": "Beanstalk",
+      "slug": "beanstalk",
+      "date": "2022-04-17",
+      "loss_usd": 182000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "governance_attack"
+    },
+    {
+      "protocol": "Ronin Bridge",
+      "slug": "ronin-bridge",
+      "date": "2022-03-29",
+      "loss_usd": 624000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    },
+    {
+      "protocol": "Wormhole",
+      "slug": "wormhole",
+      "date": "2022-02-02",
+      "loss_usd": 320000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    },
+    {
+      "protocol": "Qubit Finance",
+      "slug": "qubit-finance",
+      "date": "2022-01-28",
+      "loss_usd": 80000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "smart_contract_exploit"
+    },
+    {
+      "protocol": "BadgerDAO",
+      "slug": "badger-dao",
+      "date": "2021-12-02",
+      "loss_usd": 120000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "frontend_attack"
+    },
+    {
+      "protocol": "Cream Finance",
+      "slug": "cream-finance",
+      "date": "2021-10-27",
+      "loss_usd": 130000000,
+      "risk_score": 24.555687606334686,
+      "flagged": false,
+      "exploit_type": "flash_loan_attack"
+    },
+    {
+      "protocol": "Poly Network",
+      "slug": "poly-network",
+      "date": "2021-08-10",
+      "loss_usd": 611000000,
+      "risk_score": 0,
+      "flagged": false,
+      "exploit_type": "bridge_exploit"
+    }
+  ],
+  "timestamp": "2026-03-26T00:50:29.369414"
+}

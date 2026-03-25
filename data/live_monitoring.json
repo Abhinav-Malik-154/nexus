@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-03-26T01:33:55.631186",
+  "update_number": 1,
+  "protocols_monitored": 4,
+  "high_risk_count": 0,
+  "results": [
+    {
+      "slug": "",
+      "name": "Lido",
+      "tvl": 19915604272,
+      "change_1d": 0,
+      "change_7d": 0,
+      "category": "Liquid Staking",
+      "risk_score": 43.4,
+      "risk_level": "MEDIUM",
+      "alert": "\ud83d\udfe1",
+      "timestamp": "2026-03-26T01:33:55.631120"
+    },
+    {
+      "slug": "",
+      "name": "Aave V3",
+      "tvl": 24774768246,
+      "change_1d": 0,
+      "change_7d": 0,
+      "category": "Lending",
+      "risk_score": 42.7,
+      "risk_level": "MEDIUM",
+      "alert": "\ud83d\udfe1",
+      "timestamp": "2026-03-26T01:33:55.631138"
+    },
+    {
+      "slug": "",
+      "name": "Curve DEX",
+      "tvl": 1838767461,
+      "change_1d": 0,
+      "change_7d": 0,
+      "category": "Dexs",
+      "risk_score": 42.4,
+      "risk_level": "MEDIUM",
+      "alert": "\ud83d\udfe1",
+      "timestamp": "2026-03-26T01:33:55.631143"
+    },
+    {
+      "slug": "",
+      "name": "Uniswap V3",
+      "tvl": 1651820994,
+      "change_1d": 0,
+      "change_7d": 0,
+      "category": "Dexs",
+      "risk_score": 41.6,
+      "risk_level": "MEDIUM",
+      "alert": "\ud83d\udfe1",
+      "timestamp": "2026-03-26T01:33:55.631146"
+    }
+  ]
+}
