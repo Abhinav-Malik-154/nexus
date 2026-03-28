@@ -1,26 +1,23 @@
-/**
- * Nexus Protocol Contract Configuration
- *
- * Update CONTRACTS addresses after deployment to Polygon Amoy.
- * ABIs match the gas-optimized contract versions.
- */
-
-// ═══════════════════════════════════════════════════════════════════════════
-//                          CONTRACT ADDRESSES
-// ═══════════════════════════════════════════════════════════════════════════
-
+// Contract Configuration - Real deployed addresses
 export const CONTRACTS = {
-  // Update these after deployment
-  NEXUS_ORACLE: '0xC0b6B479A264e0d900f6AE7c461668905a40AAb0' as `0x${string}`,
-  PROTECTION_VAULT: '0x30F9dd5aFAbA8a3270c3351AD9aabca6CED391F3' as `0x${string}`,
-} as const
+  ORACLE: {
+    address: "0x30BB8531e998A3c6574C8985e9c360d621493595" as const,
+    chainId: 80002, // Polygon Amoy testnet
+  },
+  VAULT: {
+    address: "0x7E86F2eF483a5B43d8f6d41a88EeeFE7ED745CdC" as const,
+    chainId: 80002,
+  },
+} as const;
 
-// ═══════════════════════════════════════════════════════════════════════════
-//                          NEXUS ORACLE ABI
-// ═══════════════════════════════════════════════════════════════════════════
+// Backend URL
+export const BACKEND_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://your-backend-url.com'
+  : 'http://localhost:8000';
 
-export const NEXUS_ORACLE_ABI = [
-  // Read functions
+// Updated Oracle ABI to match deployed contract
+
+export const NEXUS_RISK_ORACLE_ABI = [
   {
     name: 'getRiskScore',
     type: 'function',
@@ -28,19 +25,7 @@ export const NEXUS_ORACLE_ABI = [
     inputs: [{ name: 'protocolId', type: 'bytes32' }],
     outputs: [
       { name: 'score', type: 'uint64' },
-      { name: 'lastUpdated', type: 'uint64' },
-      { name: 'isStale', type: 'bool' },
-    ],
-  },
-  {
-    name: 'getRiskScoreByName',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'protocolName', type: 'string' }],
-    outputs: [
-      { name: 'score', type: 'uint64' },
-      { name: 'lastUpdated', type: 'uint64' },
-      { name: 'isStale', type: 'bool' },
+      { name: 'timestamp', type: 'uint256' }
     ],
   },
   {
@@ -48,78 +33,21 @@ export const NEXUS_ORACLE_ABI = [
     type: 'function',
     stateMutability: 'view',
     inputs: [],
-    outputs: [{ name: 'highRisk', type: 'bytes32[]' }],
+    outputs: [{ name: '', type: 'bytes32[]' }],
   },
   {
-    name: 'getProtocolCount',
+    name: 'updateRiskScore',
     type: 'function',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    name: 'protocolIds',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'index', type: 'uint256' }],
-    outputs: [{ name: '', type: 'bytes32' }],
-  },
-  {
-    name: 'protocolNames',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'protocolId', type: 'bytes32' }],
-    outputs: [{ name: '', type: 'string' }],
-  },
-  {
-    name: 'alertThreshold',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint64' }],
-  },
-  {
-    name: 'isTracked',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'protocolId', type: 'bytes32' }],
-    outputs: [{ name: '', type: 'bool' }],
-  },
-  {
-    name: 'toProtocolId',
-    type: 'function',
-    stateMutability: 'pure',
-    inputs: [{ name: 'protocolName', type: 'string' }],
-    outputs: [{ name: '', type: 'bytes32' }],
-  },
-  // Events
-  {
-    name: 'RiskScoreUpdated',
-    type: 'event',
+    stateMutability: 'nonpayable',
     inputs: [
-      { name: 'protocolId', type: 'bytes32', indexed: true },
-      { name: 'oldScore', type: 'uint64', indexed: false },
-      { name: 'newScore', type: 'uint64', indexed: false },
-      { name: 'timestamp', type: 'uint64', indexed: false },
+      { name: 'protocolId', type: 'bytes32' },
+      { name: 'score', type: 'uint64' }
     ],
-  },
-  {
-    name: 'HighRiskAlert',
-    type: 'event',
-    inputs: [
-      { name: 'protocolId', type: 'bytes32', indexed: true },
-      { name: 'riskScore', type: 'uint64', indexed: false },
-      { name: 'timestamp', type: 'uint64', indexed: false },
-    ],
-  },
+    outputs: [],
+  }
 ] as const
 
-// ═══════════════════════════════════════════════════════════════════════════
-//                        PROTECTION VAULT ABI
-// ═══════════════════════════════════════════════════════════════════════════
-
 export const PROTECTION_VAULT_ABI = [
-  // Write functions
   {
     name: 'deposit',
     type: 'function',
@@ -141,39 +69,46 @@ export const PROTECTION_VAULT_ABI = [
     outputs: [],
   },
   {
-    name: 'addProtectionRule',
+    name: 'setProtectionRule',
     type: 'function',
     stateMutability: 'nonpayable',
     inputs: [
       { name: 'protocolId', type: 'bytes32' },
-      { name: 'riskThreshold', type: 'uint64' },
+      { name: 'riskThreshold', type: 'uint256' },
       { name: 'token', type: 'address' },
       { name: 'safeAddress', type: 'address' },
     ],
+    outputs: [{ name: 'ruleId', type: 'uint256' }],
+  },
+  {
+    name: 'removeProtectionRule',
+    type: 'function',
+    stateMutability: 'nonpayable',
+    inputs: [{ name: 'ruleId', type: 'uint256' }],
     outputs: [],
   },
   {
-    name: 'addProtectionRuleByName',
+    name: 'getUserRules',
     type: 'function',
-    stateMutability: 'nonpayable',
-    inputs: [
-      { name: 'protocolName', type: 'string' },
-      { name: 'riskThreshold', type: 'uint64' },
+    stateMutability: 'view',
+    inputs: [{ name: 'user', type: 'address' }],
+    outputs: [{ name: '', type: 'uint256[]' }],
+  },
+  {
+    name: 'getRule',
+    type: 'function',
+    stateMutability: 'view',
+    inputs: [{ name: 'ruleId', type: 'uint256' }],
+    outputs: [
+      { name: 'protocolId', type: 'bytes32' },
+      { name: 'riskThreshold', type: 'uint256' },
       { name: 'token', type: 'address' },
       { name: 'safeAddress', type: 'address' },
+      { name: 'active', type: 'bool' },
     ],
-    outputs: [],
   },
   {
-    name: 'deactivateRule',
-    type: 'function',
-    stateMutability: 'nonpayable',
-    inputs: [{ name: 'ruleIndex', type: 'uint256' }],
-    outputs: [],
-  },
-  // Read functions
-  {
-    name: 'getBalance',
+    name: 'getUserBalance',
     type: 'function',
     stateMutability: 'view',
     inputs: [
@@ -183,47 +118,33 @@ export const PROTECTION_VAULT_ABI = [
     outputs: [{ name: '', type: 'uint256' }],
   },
   {
-    name: 'getRules',
+    name: 'checkUpkeep',
     type: 'function',
     stateMutability: 'view',
-    inputs: [{ name: 'user', type: 'address' }],
+    inputs: [{ name: 'checkData', type: 'bytes' }],
     outputs: [
-      {
-        name: '',
-        type: 'tuple[]',
-        components: [
-          { name: 'protocolId', type: 'bytes32' },
-          { name: 'token', type: 'address' },
-          { name: 'riskThreshold', type: 'uint64' },
-          { name: 'flags', type: 'uint8' },
-          { name: 'safeAddress', type: 'address' },
-          { name: 'createdAt', type: 'uint64' },
-        ],
-      },
+      { name: 'upkeepNeeded', type: 'bool' },
+      { name: 'performData', type: 'bytes' },
     ],
   },
   {
-    name: 'getRuleCount',
+    name: 'performUpkeep',
     type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'user', type: 'address' }],
-    outputs: [{ name: '', type: 'uint256' }],
+    stateMutability: 'nonpayable',
+    inputs: [{ name: 'performData', type: 'bytes' }],
+    outputs: [],
   },
   {
-    name: 'hasVault',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'user', type: 'address' }],
-    outputs: [{ name: '', type: 'bool' }],
+    name: 'ProtectionTriggered',
+    type: 'event',
+    inputs: [
+      { name: 'user', type: 'address', indexed: true },
+      { name: 'ruleId', type: 'uint256', indexed: true },
+      { name: 'protocolId', type: 'bytes32', indexed: true },
+      { name: 'token', type: 'address', indexed: false },
+      { name: 'amount', type: 'uint256', indexed: false },
+    ],
   },
-  {
-    name: 'getTotalUsers',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  // Events
   {
     name: 'Deposited',
     type: 'event',
@@ -240,97 +161,10 @@ export const PROTECTION_VAULT_ABI = [
       { name: 'user', type: 'address', indexed: true },
       { name: 'token', type: 'address', indexed: true },
       { name: 'amount', type: 'uint256', indexed: false },
-      { name: 'destination', type: 'address', indexed: false },
-    ],
-  },
-  {
-    name: 'ProtectionTriggered',
-    type: 'event',
-    inputs: [
-      { name: 'user', type: 'address', indexed: true },
-      { name: 'protocolId', type: 'bytes32', indexed: true },
-      { name: 'riskScore', type: 'uint64', indexed: false },
-      { name: 'token', type: 'address', indexed: false },
-      { name: 'amount', type: 'uint256', indexed: false },
-      { name: 'safeAddress', type: 'address', indexed: false },
-    ],
-  },
-  {
-    name: 'RuleAdded',
-    type: 'event',
-    inputs: [
-      { name: 'user', type: 'address', indexed: true },
-      { name: 'protocolId', type: 'bytes32', indexed: true },
-      { name: 'threshold', type: 'uint64', indexed: false },
-      { name: 'token', type: 'address', indexed: false },
-      { name: 'safeAddress', type: 'address', indexed: false },
     ],
   },
 ] as const
 
-// ═══════════════════════════════════════════════════════════════════════════
-//                              ERC20 ABI
-// ═══════════════════════════════════════════════════════════════════════════
-
-export const ERC20_ABI = [
-  {
-    name: 'approve',
-    type: 'function',
-    stateMutability: 'nonpayable',
-    inputs: [
-      { name: 'spender', type: 'address' },
-      { name: 'amount', type: 'uint256' },
-    ],
-    outputs: [{ name: '', type: 'bool' }],
-  },
-  {
-    name: 'allowance',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [
-      { name: 'owner', type: 'address' },
-      { name: 'spender', type: 'address' },
-    ],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    name: 'balanceOf',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [{ name: 'account', type: 'address' }],
-    outputs: [{ name: '', type: 'uint256' }],
-  },
-  {
-    name: 'decimals',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'uint8' }],
-  },
-  {
-    name: 'symbol',
-    type: 'function',
-    stateMutability: 'view',
-    inputs: [],
-    outputs: [{ name: '', type: 'string' }],
-  },
-] as const
-
-// ═══════════════════════════════════════════════════════════════════════════
-//                             TYPES
-// ═══════════════════════════════════════════════════════════════════════════
-
-export interface ProtectionRule {
-  protocolId: `0x${string}`
-  token: `0x${string}`
-  riskThreshold: bigint
-  flags: number
-  safeAddress: `0x${string}`
-  createdAt: bigint
-}
-
-export interface RiskScore {
-  score: bigint
-  lastUpdated: bigint
-  isStale: boolean
-}
+// Default addresses (should be overridden by environment variables)
+export const ORACLE_ADDRESS = (process.env.NEXT_PUBLIC_ORACLE_ADDRESS || '0x0000000000000000000000000000000000000000') as `0x${string}`
+export const VAULT_ADDRESS = (process.env.NEXT_PUBLIC_VAULT_ADDRESS || '0x0000000000000000000000000000000000000000') as `0x${string}`

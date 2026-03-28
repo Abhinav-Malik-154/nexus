@@ -1,11 +1,11 @@
 {
   "network": "polygon-amoy",
   "chainId": 80002,
-  "timestamp": "2026-03-25T23:27:00+05:30",
+  "timestamp": "2026-03-28T20:27:43.827Z",
   "deployer": "0xf83fC198d93aA442fBa68A4dB971A43a33F3607F",
   "contracts": {
-    "NexusRiskOracle": "0xC0b6B479A264e0d900f6AE7c461668905a40AAb0",
-    "ProtectionVault": "0x30F9dd5aFAbA8a3270c3351AD9aabca6CED391F3"
+    "NexusRiskOracle": "0x30BB8531e998A3c6574C8985e9c360d621493595",
+    "ProtectionVault": "0x7E86F2eF483a5B43d8f6d41a88EeeFE7ED745CdC"
   },
   "explorer": "https://amoy.polygonscan.com"
 }

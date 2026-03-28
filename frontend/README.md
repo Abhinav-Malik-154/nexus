@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexus Frontend — Production-Grade DeFi Risk Dashboard
 
-## Getting Started
+Modern Next.js 16 dashboard for real-time DeFi protocol risk monitoring with ML-powered predictions.
 
-First, run the development server:
+## ⚡ Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# → http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Architecture
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Stack:** Next.js 16 • React 19 • TypeScript • TailwindCSS v4 • wagmi 3.5
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Pages**: /, /intelligence, /risk-map, /protection, /alerts
+- **Components**: UI primitives + dashboard components
+- **Hooks**: Contract interactions + data fetching
+- **Real Data**: DefiLlama API (live protocol data)
 
-## Learn More
+## ✅ Features
 
-To learn more about Next.js, take a look at the following resources:
+- Real data from DefiLlama (no fake metrics!)
+- Real model metrics: F1=31.2%, Recall=70.8%
+- Production-grade UI with loading/error states
+- Responsive design (mobile-first)
+- Type-safe throughout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Model Metrics
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Precision**: 20.5% (many false positives - intentional)
+- **Recall**: 70.8% (catches most exploits)
+- **F1**: 31.2%, **AUC**: 66.2%
 
-## Deploy on Vercel
+Better to warn early than miss a real threat.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Run
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run dev    # Development
+npm run build  # Production build
+npm start      # Production server
+```
+
+---
+
+**v1.0** • Production Ready • Honest Metrics

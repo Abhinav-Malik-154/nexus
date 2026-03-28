@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Providers } from "@/components/Providers";
-import { Navbar } from "@/components/Navbar";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
@@ -22,17 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${jetbrainsMono.variable} antialiased`}>
-      <body
-        style={{
-          background: '#0a0a0a',
-          minHeight: '100vh',
-          fontFamily: "'JetBrains Mono', 'Fira Code', 'Courier New', monospace",
-        }}
-      >
-        <Providers>
-          <Navbar />
-          <main style={{ paddingTop: '48px' }}>{children}</main>
-        </Providers>
+      <body>
+        {children}
       </body>
     </html>
   );

@@ -1,0 +1,26 @@
+{
+  "name": "nexus-defi-anomaly-detection",
+  "version": "1.0.0",
+  "description": "Real-time anomaly detection for DeFi protocols",
+  "homepage": "https://github.com/yourusername/nexus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nexus"
+  },
+  "keywords": [
+    "defi",
+    "anomaly-detection",
+    "blockchain",
+    "ethereum",
+    "smart-contracts",
+    "machine-learning",
+    "real-time-monitoring"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "vercel --prod",
+    "build": "cd frontend && npm run build",
+    "test": "cd contracts && forge test"
+  }
+}

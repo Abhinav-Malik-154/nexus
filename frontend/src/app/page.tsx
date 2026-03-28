@@ -1,385 +1,223 @@
 'use client'
 
 import Link from 'next/link'
-import { useProtocolCount, useHighRiskProtocols, useAlertThreshold } from '@/hooks/useNexus'
+import { PageLayout } from '@/components/layout'
+import { Card, StatCard, Button, Badge, LiveIndicator, LoadingSpinner } from '@/components/ui'
+import { HighRiskPanel, RiskDistribution } from '@/components/dashboard/protocols'
+import { useProtocols } from '@/hooks/useProtocols'
+import { formatTVL } from '@/lib/theme'
 
-export default function Home() {
-  const { data: protocolCount } = useProtocolCount()
-  const { data: highRiskProtocols } = useHighRiskProtocols()
-  const { data: alertThreshold } = useAlertThreshold()
+export default function HomePage() {
+  const { protocols, loading, error, stats } = useProtocols({
+    limit: 200,
+    minTvl: 10_000_000,
+  })
 
   return (
-    <div className="page-container">
-      <div className="max-w-container">
-        {/* Terminal Header */}
-        <div className="terminal-line">
-          {'>'} NEXUS v1.0.0 — DEFI CONTAGION INTELLIGENCE SYSTEM
-          <span className="cursor-blink">_</span>
-        </div>
-
-        {/* Hero */}
-        <h1 className="hero-title">
-          <span className="text-light">PREDICT.</span>
-          <br />
-          <span className="text-accent">PROTECT.</span>
-          <br />
-          <span className="text-light">SURVIVE DEFI.</span>
-        </h1>
-
-        {/* Description */}
-        <div className="comment-lines">
-          <div>// AI-powered contagion prediction for DeFi protocols</div>
-          <div>// Autonomous protection. Real-time risk. On-chain execution.</div>
-        </div>
-
-        {/* System Status */}
-        <div className="card status-card">
-          <div className="status-header">
-            <span className="live-dot" />
-            <span className="status-label">SYSTEM STATUS</span>
+    <PageLayout>
+      {/* Hero Section */}
+      <section className="py-16 md:py-24 px-4">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="text-[#00ff9d] font-mono text-sm mb-8 flex items-center justify-center gap-2">
+            <span className="text-[#64748b]">{'>'}</span>
+            NEXUS v1.0 — Real-Time DeFi Anomaly Detection
+            <span className="cursor-blink text-[#00ff9d]">_</span>
           </div>
-          <div className="status-grid">
-            {[
-              { label: '[PROTOCOLS]', value: protocolCount?.toString() ?? '44', color: '#06b6d4' },
-              { label: '[MODEL]', value: 'GNN v3.0 — LIVE', color: '#00ff9d' },
-              { label: '[F1 SCORE]', value: '95.0%', color: '#7c3aed' },
-              { label: '[PRECISION]', value: '97.1%', color: '#f59e0b' },
-              { label: '[HIGH RISK]', value: highRiskProtocols?.length?.toString() ?? '0', color: highRiskProtocols?.length ? '#ef4444' : '#00ff9d' },
-            ].map((row) => (
-              <div key={row.label} className="status-row">
-                <span className="status-key">{row.label}</span>
-                <span style={{ color: row.color }}>{row.value}</span>
-              </div>
-            ))}
+
+          <h1 className="text-4xl md:text-6xl font-bold font-mono tracking-tight mb-6">
+            <span className="text-[#e2e8f0]">DETECT.</span>
+            <br />
+            <span className="text-[#00ff9d]">ALERT.</span>
+            <br />
+            <span className="text-[#e2e8f0]">PROTECT.</span>
+          </h1>
+
+          <div className="text-[#64748b] font-mono text-sm space-y-1 mb-12">
+            <p>{'/* Real-time anomaly detection for DeFi protocols */'}</p>
+            <p>{'/* Monitor TVL drops, price crashes, unusual activity */'}</p>
+            <p>{'/* Instant alerts when something goes wrong */'}</p>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <Link href="/intelligence">
+              <Button variant="primary" size="lg">View Live Monitoring →</Button>
+            </Link>
+            <Link href="/protection">
+              <Button variant="secondary" size="lg">Setup Alerts</Button>
+            </Link>
+          </div>
+
+          {/* Key Difference Badge */}
+          <div className="mt-8 inline-block">
+            <Badge variant="warning">
+              🔄 PIVOT: We detect anomalies NOW, not predict exploits LATER
+            </Badge>
           </div>
         </div>
+      </section>
 
-        {/* CTA Buttons */}
-        <div className="button-group">
-          <Link href="/intelligence" className="btn btn-primary">
-            🧠 INTELLIGENCE HQ
-          </Link>
-          <Link href="/risk-map" className="btn btn-outline">
-            📊 RISK MAP
-          </Link>
-          <Link href="/protection" className="btn btn-outline">
-            ◈ PROTECTION VAULT
-          </Link>
-        </div>
-
-        {/* Stats */}
-        <div className="stats-grid">
-          {[
-            { label: 'MODEL PRECISION', value: '97.1%' },
-            { label: 'PROTOCOLS MONITORED', value: '44+' },
-            { label: 'MODEL F1 SCORE', value: '95.0%' },
-            { label: 'SECURITY GRADE', value: 'A+' },
-          ].map((stat) => (
-            <div key={stat.label} className="stat-card">
-              <div className="stat-label">{stat.label}</div>
-              <div className="stat-value">{stat.value}</div>
+      {/* System Status Bar */}
+      <section className="border-y border-[#1a1a2e] bg-[#0f0f0f]">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <LiveIndicator />
+              <span className="text-[#64748b] text-sm font-mono">Monitoring Active</span>
             </div>
-          ))}
-        </div>
-
-        {/* Features */}
-        <div className="features-grid">
-          {[
-            {
-              title: 'RISK ORACLE',
-              desc: 'AI-generated risk scores updated on-chain every 15 minutes via authorized backend',
-              tag: 'AI POWERED',
-              color: '#00ff9d',
-            },
-            {
-              title: 'CONTAGION GRAPH',
-              desc: 'Protocol dependency visualization showing real-time risk propagation paths',
-              tag: 'LIVE DATA',
-              color: '#06b6d4',
-            },
-            {
-              title: 'AUTO PROTECTION',
-              desc: 'Chainlink Automation triggers autonomous fund transfers when thresholds crossed',
-              tag: 'ON-CHAIN',
-              color: '#7c3aed',
-            },
-            {
-              title: 'GNN MODEL v3.0',
-              desc: 'Security-grade Graph Neural Network with 7 optimized features, 97% precision, trained on real exploit data',
-              tag: 'SECURITY-GRADE',
-              color: '#f59e0b',
-            },
-          ].map((card) => (
-            <div key={card.title} className="feature-card">
-              <div className="feature-header">
-                <span className="feature-title">{card.title}</span>
-                <span className="feature-tag" style={{ color: card.color, borderColor: `${card.color}30`, background: `${card.color}15` }}>
-                  {card.tag}
-                </span>
+            
+            {loading ? (
+              <LoadingSpinner size="sm" />
+            ) : error ? (
+              <Badge variant="danger">Error loading data</Badge>
+            ) : (
+              <div className="flex flex-wrap items-center gap-6 text-sm font-mono">
+                <div>
+                  <span className="text-[#64748b]">Protocols: </span>
+                  <span className="text-[#06b6d4]">{stats.total}</span>
+                </div>
+                <div>
+                  <span className="text-[#64748b]">TVL Monitored: </span>
+                  <span className="text-[#00ff9d]">{formatTVL(stats.totalTvl)}</span>
+                </div>
+                <div>
+                  <span className="text-[#64748b]">Anomalies: </span>
+                  <span className={stats.highRiskCount > 0 ? 'text-red-400' : 'text-[#00ff9d]'}>
+                    {stats.highRiskCount}
+                  </span>
+                </div>
+                <div>
+                  <span className="text-[#64748b]">Mode: </span>
+                  <span className="text-[#7c3aed]">Real-Time Detection</span>
+                </div>
               </div>
-              <div className="feature-desc">{card.desc}</div>
-            </div>
-          ))}
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Main Dashboard */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <StatCard
+            label="Protocols Monitored"
+            value={loading ? '...' : stats.total}
+            icon="◎"
+            trend="neutral"
+            trendValue="Live from DefiLlama"
+          />
+          <StatCard
+            label="Total TVL"
+            value={loading ? '...' : formatTVL(stats.totalTvl)}
+            icon="◈"
+            trend="neutral"
+            trendValue="Across all protocols"
+          />
+          <StatCard
+            label="Active Anomalies"
+            value={loading ? '...' : stats.highRiskCount}
+            icon="⚠"
+            trend={stats.highRiskCount > 5 ? 'up' : 'neutral'}
+            trendValue={stats.criticalCount > 0 ? `${stats.criticalCount} critical` : 'Normal levels'}
+          />
+          <StatCard
+            label="Detection Rate"
+            value={loading ? '...' : '< 1 sec'}
+            icon="◉"
+            trend="neutral"
+            trendValue="Real-time monitoring"
+          />
         </div>
 
-        {/* Pipeline */}
-        <div className="card pipeline-card">
-          <div className="pipeline-label">· NEXUS PIPELINE</div>
-          <div className="pipeline-steps">
+        <div className="grid md:grid-cols-2 gap-8">
+          <HighRiskPanel protocols={protocols} loading={loading} title="🚨 Current Anomalies" limit={5} />
+          <div className="space-y-8">
+            <RiskDistribution protocols={protocols} loading={loading} />
+            
+            {/* Detection Method Card */}
+            <Card>
+              <div className="space-y-4">
+                <h3 className="text-[#00ff9d] font-mono text-sm uppercase">Detection Method</h3>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#00ff9d] mt-0.5">✓</span>
+                    <div>
+                      <p className="text-[#e2e8f0] font-medium">Rule-Based Detection</p>
+                      <p className="text-[#64748b] text-xs">TVL drops {'>'}20%, price crashes {'>'}30%</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#00ff9d] mt-0.5">✓</span>
+                    <div>
+                      <p className="text-[#e2e8f0] font-medium">ML Anomaly Detection</p>
+                      <p className="text-[#64748b] text-xs">Isolation Forest catches subtle patterns</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-[#00ff9d] mt-0.5">✓</span>
+                    <div>
+                      <p className="text-[#e2e8f0] font-medium">Real-Time Monitoring</p>
+                      <p className="text-[#64748b] text-xs">Updates every 60 seconds</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Detect */}
+      <section className="border-t border-[#1a1a2e] py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-[#00ff9d] font-mono text-sm uppercase tracking-wider mb-8 text-center">
+            {'/* What We Detect */'}
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { step: 'FETCH DATA', active: false },
-              { step: 'BUILD GRAPH', active: false },
-              { step: 'RUN GNN', active: false },
-              { step: 'UPDATE ORACLE', active: false },
-              { step: 'TRIGGER PROTECTION', active: true },
-            ].map((item, i) => (
-              <div key={item.step} className="pipeline-item">
-                <span className={`pipeline-step ${item.active ? 'active' : ''}`}>
-                  {item.step}
-                </span>
-                {i < 4 && <span className="pipeline-arrow">→</span>}
-              </div>
+              {
+                icon: '📉',
+                title: 'TVL Anomalies',
+                description: 'Sudden drops >20% in 1 hour or >40% in 24 hours. Often first sign of exploit.',
+                example: 'Example: Euler hack - $200M TVL drained',
+              },
+              {
+                icon: '💥',
+                title: 'Price Crashes',
+                description: 'Token price drops over 30% rapidly. Could indicate oracle manipulation or market panic.',
+                example: 'Example: Terra/Luna collapse',
+              },
+              {
+                icon: '🔥',
+                title: 'Volume Spikes',
+                description: 'Trading volume 5x+ normal. May indicate exploit draining or unusual activity.',
+                example: 'Example: Wormhole bridge hack',
+              },
+            ].map(item => (
+              <Card key={item.title} className="hover:border-[#7c3aed]/50 transition-all">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-[#e2e8f0] font-mono font-semibold mb-2">{item.title}</h3>
+                <p className="text-[#64748b] text-sm mb-3">{item.description}</p>
+                <p className="text-[#475569] text-xs italic">{item.example}</p>
+              </Card>
             ))}
           </div>
         </div>
+      </section>
 
-        {/* Tech Stack */}
-        <div className="card tech-card">
-          <div className="tech-label">· TECH STACK</div>
-          <div className="tech-grid">
-            {[
-              { name: 'Solidity', desc: 'Smart Contracts' },
-              { name: 'Foundry', desc: 'Testing & Deploy' },
-              { name: 'PyTorch', desc: 'GNN Model' },
-              { name: 'Next.js', desc: 'Frontend' },
-              { name: 'Chainlink', desc: 'Automation' },
-              { name: 'wagmi', desc: 'Web3 Hooks' },
-            ].map((tech) => (
-              <div key={tech.name} className="tech-item">
-                <span className="tech-name">{tech.name}</span>
-                <span className="tech-desc">{tech.desc}</span>
-              </div>
-            ))}
-          </div>
+      {/* Honest Disclaimer */}
+      <section className="border-t border-[#1a1a2e] py-8 px-4">
+        <div className="max-w-3xl mx-auto text-center text-[#475569] text-xs font-mono space-y-2">
+          <p><span className="text-amber-400">⚠ What This Is:</span> Real-time anomaly detection system.</p>
+          <p>
+            We detect CURRENT unusual behavior (TVL drops, price crashes).
+            We do NOT predict FUTURE exploits - that's too hard with limited data.
+          </p>
+          <p>
+            Lower false alarms, more useful, actually works. Not financial advice. DYOR.
+          </p>
         </div>
-      </div>
-
-      <style jsx>{`
-        .page-container {
-          min-height: calc(100vh - 48px);
-          background: #0a0a0a;
-          background-image: radial-gradient(ellipse at 50% 20%, rgba(124,58,237,0.08) 0%, transparent 60%);
-          padding: 80px 24px;
-        }
-        .max-w-container {
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-        .terminal-line {
-          color: #00ff9d;
-          font-family: monospace;
-          font-size: 14px;
-          margin-bottom: 32px;
-        }
-        .hero-title {
-          font-family: monospace;
-          font-weight: bold;
-          font-size: clamp(40px, 8vw, 72px);
-          line-height: 1.1;
-          margin: 0 0 24px 0;
-        }
-        .text-light { color: #e2e8f0; }
-        .text-accent { color: #00ff9d; }
-        .comment-lines {
-          color: #64748b;
-          font-family: monospace;
-          font-size: 14px;
-          margin-bottom: 40px;
-        }
-        .card {
-          background: #0f0f0f;
-          border: 1px solid #1a1a2e;
-          padding: 20px;
-          margin-bottom: 24px;
-        }
-        .status-card { max-width: 400px; }
-        .status-header {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          margin-bottom: 16px;
-        }
-        .live-dot {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background: #00ff9d;
-          animation: pulse 2s infinite;
-        }
-        .status-label {
-          color: #00ff9d;
-          font-size: 11px;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-        }
-        .status-row {
-          display: flex;
-          gap: 16px;
-          font-family: monospace;
-          font-size: 13px;
-          margin-bottom: 8px;
-        }
-        .status-key {
-          color: #64748b;
-          width: 120px;
-        }
-        .button-group {
-          display: flex;
-          gap: 16px;
-          margin-bottom: 48px;
-        }
-        .btn {
-          padding: 12px 24px;
-          font-family: monospace;
-          font-size: 12px;
-          font-weight: bold;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          text-decoration: none;
-          cursor: pointer;
-        }
-        .btn-primary {
-          background: #f59e0b;
-          color: #0a0a0a;
-          border: none;
-        }
-        .btn-outline {
-          background: transparent;
-          color: #00ff9d;
-          border: 1px solid #00ff9d;
-        }
-        .stats-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
-          margin-bottom: 48px;
-        }
-        .stat-card {
-          background: #0f0f0f;
-          border: 1px solid #1a1a2e;
-          padding: 20px;
-        }
-        .stat-label {
-          color: #64748b;
-          font-size: 10px;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          margin-bottom: 8px;
-        }
-        .stat-value {
-          color: #00ff9d;
-          font-size: 28px;
-          font-weight: bold;
-          font-family: monospace;
-        }
-        .features-grid {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 16px;
-          margin-bottom: 24px;
-        }
-        .feature-card {
-          background: #0f0f0f;
-          border: 1px solid #1a1a2e;
-          padding: 24px;
-        }
-        .feature-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-bottom: 12px;
-        }
-        .feature-title {
-          color: #e2e8f0;
-          font-size: 14px;
-          font-weight: bold;
-          letter-spacing: 0.1em;
-        }
-        .feature-tag {
-          padding: 2px 8px;
-          font-size: 9px;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          border: 1px solid;
-          font-family: monospace;
-        }
-        .feature-desc {
-          color: #64748b;
-          font-size: 13px;
-          line-height: 1.5;
-        }
-        .pipeline-card, .tech-card { padding: 24px; }
-        .pipeline-label, .tech-label {
-          color: #64748b;
-          font-size: 11px;
-          text-transform: uppercase;
-          letter-spacing: 0.15em;
-          margin-bottom: 20px;
-        }
-        .pipeline-steps {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          font-family: monospace;
-          font-size: 12px;
-          flex-wrap: wrap;
-        }
-        .pipeline-item {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-        .pipeline-step {
-          color: #64748b;
-          border: 1px solid #1a1a2e;
-          padding: 6px 12px;
-          background: transparent;
-        }
-        .pipeline-step.active {
-          color: #f59e0b;
-          background: rgba(245, 158, 11, 0.1);
-          border-color: rgba(245, 158, 11, 0.3);
-        }
-        .pipeline-arrow { color: #64748b; }
-        .tech-grid {
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          gap: 16px;
-        }
-        .tech-item {
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-        }
-        .tech-name {
-          color: #e2e8f0;
-          font-family: monospace;
-          font-size: 13px;
-          font-weight: bold;
-        }
-        .tech-desc {
-          color: #64748b;
-          font-size: 10px;
-        }
-        @media (max-width: 768px) {
-          .stats-grid, .features-grid { grid-template-columns: 1fr; }
-          .tech-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-        @keyframes pulse {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.5; }
-        }
-      `}</style>
-    </div>
+      </section>
+    </PageLayout>
   )
 }
