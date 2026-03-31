@@ -102,3 +102,5 @@ htmlcov/
 .pytest_cache/
 .nyc_output/
 lcov.info
+temp_auto_push.bat
+temp_interactive_push.bat

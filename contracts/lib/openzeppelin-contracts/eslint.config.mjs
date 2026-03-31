@@ -4,6 +4,9 @@ import prettier from 'eslint-config-prettier';
 import globals from 'globals';
 import path from 'path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

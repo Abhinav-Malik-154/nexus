@@ -429,3 +429,7 @@ Contributions welcome! Please read the contributing guidelines first.
 - DefiLlama for protocol data
 - Chainlink for automation infrastructure
 - OpenZeppelin for secure contract primitives
+
+<p align="center">
+  Built by <a href="https://github.com/Abhinav-Malik-154"><b>Abhinav Malik</b></a>
+</p>

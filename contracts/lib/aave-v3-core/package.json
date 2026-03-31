@@ -87,5 +87,8 @@
   },
   "lint-staged": {
     "*.{ts,js,md,sol}": "prettier --write"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
   }
 }
